@@ -20,8 +20,11 @@ header {
   z-index: 2;
 }
 
-header a {
+header .tabs a {
+  padding-bottom: 1em;
+  padding-top: 1em;
   color: #fff;
+  font-size: 1em;
 }
 
 #galaxy {
@@ -35,6 +38,39 @@ header a {
   justify-content: center;
   align-items: center;
   position: relative;
+}
+
+.landing {
+  position: absolute;
+  left: 3em;
+  bottom: 0;
+}
+
+.landing-down {
+  position: absolute;
+  left: 50%;
+  z-index: 999;
+  color: white;
+  top: 0;
+  font-size: 3em;
+  color: #3273dc;
+  opacity: 0.35;
+}
+
+.landing h1, .landing h2, .landing h3 {
+  color: #fff;
+}
+
+.landing h1 {
+  font-size: 5em;
+}
+
+.landing h2 {
+  font-size: 3em;
+}
+
+.landing h3 {
+  font-size: 3em;
 }
 
 .planet {
@@ -110,7 +146,7 @@ header a {
 
 .c-container {
   position: absolute;
-  top: -50%;
+  top: -60%;
   right: 25%;
   width: 200px;
   height: 200px;
