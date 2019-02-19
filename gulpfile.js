@@ -15,6 +15,7 @@ gulp.task('js', function () {
     return gulp.src([
         './resources/js/particles.min.js',
         './resources/js/fontawesome.min.js',
+        './node_modules/bulma-extensions/bulma-carousel/src/js/index.js',
         './resources/js/main.js',
     ])
     .pipe(concat(
@@ -29,4 +30,4 @@ gulp.task('update', function update () {
     });
 });
 
-gulp.task('default', gulp.parallel('css', 'js', 'update'));
+gulp.task('default', gulp.series('css', 'js', 'update'));
