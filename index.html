@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="landing">
         <nav class="tabs is-centered">
             <ul>
                 <li class="is-active"><a>Welcome</a></li>
@@ -16,9 +16,8 @@
             </ul>
         </nav>
     </header>
-
-    <div id="galaxy">
-        <div class="landing">
+    <section id="galaxy">
+        <div class="plug">
             <h1>Sam Ayres</h1>
             <h2>Web Design &amp; Development</h2>
             <h3>Part of the PHP &amp; JS universe.</h3>
@@ -42,21 +41,9 @@
         <div class="c-container">
             <div class="comet"></div>
         </div>
-    </div>
-    <div class="background">
+    </section>
+    <section id="clouds">
         <i class="fas fa-arrow-alt-circle-down landing-down"></i>
-        <svg class="clouds cloud1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            version="1.1" x="0" y="0" width="512" height="512" viewBox="0 0 512 512" enable-background="new 0 0 512 512"
-            xml:space="preserve">
-            <path id="cloud-icon" d="M406.1 227.63c-8.23-103.65-144.71-137.8-200.49-49.05 -36.18-20.46-82.33 3.61-85.22 45.9C80.73 229.34 50 263.12 50 304.1c0 44.32 35.93 80.25 80.25 80.25h251.51c44.32 0 80.25-35.93 80.25-80.25C462 268.28 438.52 237.94 406.1 227.63z" />
-        </svg>
-        <svg class="clouds cloud2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            version="1.1" x="0" y="0" width="512" height="512" viewBox="0 0 512 512" enable-background="new 0 0 512 512"
-            xml:space="preserve">
-            <path id="cloud-icon" d="M406.1 227.63c-8.23-103.65-144.71-137.8-200.49-49.05 -36.18-20.46-82.33 3.61-85.22 45.9C80.73 229.34 50 263.12 50 304.1c0 44.32 35.93 80.25 80.25 80.25h251.51c44.32 0 80.25-35.93 80.25-80.25C462 268.28 438.52 237.94 406.1 227.63z" />
-        </svg>
-    </div>
-    <div class="ground">
         <div class='carousel carousel-animated carousel-animate-slide' data-size="5">
             <div class='carousel-container'>
                 <div class='carousel-item is-active'>
@@ -90,127 +77,115 @@
                 </div>
             </div>
         </div>
-        <div id="birdsonawire"><div id="wire"></div>
-            <div id="birdwrapper">
-                <!-- start bird 1 -->
-                <div id="bird1">
-                    <div id="head1"></div>
-                    <div id="beak1"></div>
-                    <div id="body1"></div>
-                    <div id="wing-left1"></div>
-                    <div id="wing-right1"></div>
-                </div>
-                <!-- end bird 1 -->
-
-                <!-- start bird 2 -->
-                <div id="bird2">
-                    <div id="head2"></div>
-                    <div id="beak2"></div>
-                    <div id="body2"></div>
-                    <div id="wing-left2"></div>
-                    <div id="wing-right2"></div>
-                </div>
-                <!-- end bird 2 -->
-
-                <!-- start bird 3 -->
-                <div id="bird3">
-                    <div id="head3"></div>
-                    <div id="beak3"></div>
-                    <div id="body3"></div>
-                    <div id="wing-left3"></div>
-                    <div id="wing-right3"></div>
-                </div>
-                <!-- end bird 3 -->
-
-                <!-- start bird 4 -->
-                <div id="bird4">
-                    <div id="head4"></div>
-                    <div id="beak4"></div>
-                    <div id="body4"></div>
-                    <div id="wing-left4"></div>
-                    <div id="wing-right4"></div>
-                </div>
-                <!-- end bird 4 -->
-
-                <!-- start bird 5 -->
-                <div id="bird5">
-                    <div id="head5"></div>
-                    <div id="beak5"></div>
-                    <div id="body5"></div>
-                    <div id="wing-left5"></div>
-                    <div id="wing-right5"></div>
-                </div>
-                <!-- end bird 5 -->
-
-                <!-- start bird 6 -->
-                <div id="bird6">
-                    <div id="head6"></div>
-                    <div id="beak6"></div>
-                    <div id="body6"></div>
-                    <div id="wing-left6"></div>
-                    <div id="wing-right6"></div>
-                </div>
-                <!-- end bird 6 -->
-
-                <!-- start bird 7 -->
-                <div id="bird7">
-                    <div id="head7"></div>
-                    <div id="beak7"></div>
-                    <div id="body7"></div>
-                    <div id="wing-left7"></div>
-                    <div id="wing-right7"></div>
-                </div>
-                <!-- end bird 7 -->
-
-                <!-- start bird 8 -->
-                <div id="bird8">
-                    <div id="head8"></div>
-                    <div id="beak8"></div>
-                    <div id="body8"></div>
-                    <div id="wing-left8"></div>
-                    <div id="wing-right8"></div>
-                </div>
-                <!-- end bird 8 -->
+        <svg class="clouds cloud1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1" x="0" y="0" width="512" height="512" viewBox="0 0 512 512" enable-background="new 0 0 512 512"
+            xml:space="preserve">
+            <path id="cloud-icon" d="M406.1 227.63c-8.23-103.65-144.71-137.8-200.49-49.05 -36.18-20.46-82.33 3.61-85.22 45.9C80.73 229.34 50 263.12 50 304.1c0 44.32 35.93 80.25 80.25 80.25h251.51c44.32 0 80.25-35.93 80.25-80.25C462 268.28 438.52 237.94 406.1 227.63z" />
+        </svg>
+        <svg class="clouds cloud2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1" x="0" y="0" width="512" height="512" viewBox="0 0 512 512" enable-background="new 0 0 512 512"
+            xml:space="preserve">
+            <path id="cloud-icon" d="M406.1 227.63c-8.23-103.65-144.71-137.8-200.49-49.05 -36.18-20.46-82.33 3.61-85.22 45.9C80.73 229.34 50 263.12 50 304.1c0 44.32 35.93 80.25 80.25 80.25h251.51c44.32 0 80.25-35.93 80.25-80.25C462 268.28 438.52 237.94 406.1 227.63z" />
+        </svg>
+    </section>
+    <section id="birds">
+        <div class="wire"></div>
+        <div class="birdwrapper">
+            <div class="bird1">
+                <div class="head"></div>
+                <div class="beak"></div>
+                <div class="body"></div>
+                <div class="wing-left"></div>
+                <div class="wing-right"></div>
+            </div>
+            <div class="bird2">
+                <div class="head"></div>
+                <div class="beak"></div>
+                <div class="body"></div>
+                <div class="wing-left"></div>
+                <div class="wing-right"></div>
+            </div>
+            <div class="bird3">
+                <div class="head"></div>
+                <div class="beak"></div>
+                <div class="body"></div>
+                <div class="wing-left"></div>
+                <div class="wing-right"></div>
+            </div>
+            <div class="bird4">
+                <div class="head"></div>
+                <div class="beak"></div>
+                <div class="body"></div>
+                <div class="wing-left"></div>
+                <div class="wing-right"></div>
+            </div>
+            <div class="bird5">
+                <div class="head"></div>
+                <div class="beak"></div>
+                <div class="body"></div>
+                <div class="wing-left"></div>
+                <div class="wing-right"></div>
+            </div>
+            <div class="bird6">
+                <div class="head"></div>
+                <div class="beak"></div>
+                <div class="body"></div>
+                <div class="wing-left"></div>
+                <div class="wing-right"></div>
+            </div>
+            <div class="bird7">
+                <div class="head"></div>
+                <div class="beak"></div>
+                <div class="body"></div>
+                <div class="wing-left"></div>
+                <div class="wing-right"></div>
+            </div>
+            <div class="bird8">
+                <div class="head"></div>
+                <div class="beak"></div>
+                <div class="body"></div>
+                <div class="wing-left"></div>
+                <div class="wing-right"></div>
             </div>
         </div>
-    </div>
-    <section> 
+    </section>
+    <section id="progress">
         <div class="timeline">
-                <header class="timeline-header">
-                    <span class="tag is-medium is-primary">Start</span>
-                </header>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
+            <header class="timeline-header">
+                <span class="tag is-medium is-primary">Start</span>
+            </header>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
                     <p class="heading">January 2016</p>
                     <p>Timeline content - Can include any HTML element</p>
-                    </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker is-image is-32x32">
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker is-image is-32x32">
                     <img src="http://bulma.io/images/placeholders/32x32.png">
-                    </div>
-                    <div class="timeline-content">
+                </div>
+                <div class="timeline-content">
                     <p class="heading">February 2016</p>
                     <p>Timeline content - Can include any HTML element</p>
-                    </div>
                 </div>
-                <header class="timeline-header">
-                    <span class="tag is-primary">2017</span>
-                </header>
-                <div class="timeline-item">
-                    <div class="timeline-marker is-icon">
+            </div>
+            <header class="timeline-header">
+                <span class="tag is-primary">2017</span>
+            </header>
+            <div class="timeline-item">
+                <div class="timeline-marker is-icon">
                     <i class="fa fa-flag"></i>
-                    </div>
-                    <div class="timeline-content">
+                </div>
+                <div class="timeline-content">
                     <p class="heading">March 2017</p>
                     <p>Timeline content - Can include any HTML element</p>
-                    </div>
                 </div>
-                <div class="timeline-header">
-                    <span class="tag is-medium is-primary">End</span>
-                </div>
-                </div>
+            </div>
+            <div class="timeline-header">
+                <span class="tag is-medium is-primary">End</span>
+            </div>
+        </div>
     </section>
     <footer>
         Sam Ayres @ 2019

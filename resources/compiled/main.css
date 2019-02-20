@@ -2,31 +2,25 @@ body {
   width: 100%;
   height: 100%;
   min-width: 100%;
-  min-height: 100%;
-}
+  min-height: 100%; }
 
 h3 {
   width: 100%;
   color: #fff;
   font-family: sans-serif;
-  font-weight: 200;
-}
+  font-weight: 200; }
 
 header.landing {
   width: 100%;
   position: absolute;
   top: 0;
-  background-color: rgba(0,0,0,0.65);
-  z-index: 2;
-  .tabs {
-    a {
-      padding-bottom: 1em;
-      padding-top: 1em;
-      color: #fff;
-      font-size: 1em;
-    }
-  }
-}
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 2; }
+  header.landing .tabs a {
+    padding-bottom: 1em;
+    padding-top: 1em;
+    color: #fff;
+    font-size: 1em; }
 
 #galaxy {
   width: 100%;
@@ -38,28 +32,20 @@ header.landing {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-}
+  position: relative; }
 
 .plug {
   position: absolute;
   left: 3em;
-  bottom: 0;
-  h1, h2, h3 {
-    color: #fff;
-  }
-  h1 {
-    font-size: 5em;
-  }
-
-  h2 {
-    font-size: 3em;
-  }
-
-  h3 {
-    font-size: 3em;
-  }
-}
+  bottom: 0; }
+  .plug h1, .plug h2, .plug h3 {
+    color: #fff; }
+  .plug h1 {
+    font-size: 5em; }
+  .plug h2 {
+    font-size: 3em; }
+  .plug h3 {
+    font-size: 3em; }
 
 .planet {
   position: absolute;
@@ -74,18 +60,13 @@ header.landing {
   transform-origin: center;
   box-shadow: 0px 0px 4px 10px rgba(139, 49, 169, 0.52), 0px 0px 4px 20px rgba(63, 167, 143, 0.22);
   z-index: 1;
-  animation: float infinite 10s ease-in-out alternate;
-}
+  animation: float infinite 10s ease-in-out alternate; }
 
 @keyframes float {
   from {
-    transform: translate(-20px, 20px) rotate(10deg);
-  }
-
+    transform: translate(-20px, 20px) rotate(10deg); }
   to {
-    transform: translate(20px, -20px) rotate(-30deg);
-  }
-}
+    transform: translate(20px, -20px) rotate(-30deg); } }
 
 .planet:before {
   content: "";
@@ -98,8 +79,7 @@ header.landing {
   background-color: rgba(42, 218, 218, 0.1);
   filter: blur(40px);
   z-index: -999;
-  pointer-events: none;
-}
+  pointer-events: none; }
 
 #ring {
   position: absolute;
@@ -107,8 +87,7 @@ header.landing {
   height: 135px;
   left: -46%;
   top: -13%;
-  transform: rotate(-20deg);
-}
+  transform: rotate(-20deg); }
 
 .ring-style {
   opacity: 0.38;
@@ -116,8 +95,7 @@ header.landing {
   stroke: url(#SVGID_1_);
   stroke-width: 6.4984;
   stroke-linecap: round;
-  stroke-miterlimit: 10;
-}
+  stroke-miterlimit: 10; }
 
 .comet {
   position: absolute;
@@ -129,8 +107,7 @@ header.landing {
   border-radius: 10px;
   top: 53%;
   transform: rotate(40deg);
-  box-shadow: 0px 0px 75px 2px white;
-}
+  box-shadow: 0px 0px 75px 2px white; }
 
 .c-container {
   position: absolute;
@@ -138,18 +115,13 @@ header.landing {
   right: 25%;
   width: 200px;
   height: 200px;
-  animation: comets 1 8s ease-in-out 5s;
-}
+  animation: comets 1 8s ease-in-out 5s; }
 
 @keyframes comets {
   from {
-    transform: translate(300%, -300%);
-  }
-
+    transform: translate(300%, -300%); }
   to {
-    transform: translate(-300%, 300%);
-  }
-}
+    transform: translate(-300%, 300%); } }
 
 .comet:after {
   position: absolute;
@@ -161,8 +133,7 @@ header.landing {
   left: -400%;
   border-radius: 10px;
   top: 53%;
-  box-shadow: 0px 0px 75px 2px white;
-}
+  box-shadow: 0px 0px 75px 2px white; }
 
 .comet:before {
   position: absolute;
@@ -174,19 +145,16 @@ header.landing {
   left: 400%;
   border-radius: 10px;
   top: 33%;
-  box-shadow: 0px 0px 75px 2px white;
-}
-
+  box-shadow: 0px 0px 75px 2px white; }
 
 #clouds {
-	width: 100%;
+  width: 100%;
   height: 700px;
   position: relative;
   background: #326fc0;
   background-image: linear-gradient(to bottom, #0f022e, #1a1e4f, #273773, #2f5299, #326fc0);
-  overflow: hidden;
-
-  .landing-down {
+  overflow: hidden; }
+  #clouds .landing-down {
     position: absolute;
     left: 50%;
     left: calc(50% - 1.5em);
@@ -195,16 +163,12 @@ header.landing {
     top: 0;
     font-size: 3em;
     color: #3273dc;
-    opacity: 0.35;
-  }
-
-  .clouds {
+    opacity: 0.35; }
+  #clouds .clouds {
     width: 200x;
     height: 300px;
-    position: absolute;
-  }
-  
-  .cloud1 {
+    position: absolute; }
+  #clouds .cloud1 {
     top: 80px;
     z-index: 100;
     fill: #eee;
@@ -212,24 +176,21 @@ header.landing {
     -webkit-animation: move 20s linear infinite;
     -moz-animation: move 20s linear infinite;
     -o-animation: move 20s linear infinite;
-    animation: move 20s linear infinite;
-  }
-  
-  .cloud2 {
+    animation: move 20s linear infinite; }
+  #clouds .cloud2 {
     top: 240px;
     z-index: 200;
     fill: #eee;
     -webkit-animation: move 35s linear 10s infinite backwards;
     -moz-animation: move 35s linear 10s infinite backwards;
     -o-animation: move 35s linear 10s infinite backwards;
-    animation: move 35s linear 10s infinite backwards;
-  }
-  
-  @-webkit-keyframes move {
-    from {-webkit-transform: translateX(-400px);}
-    to {-webkit-transform: translateX(1350px);}
-  }
-}
+    animation: move 35s linear 10s infinite backwards; }
+
+@-webkit-keyframes move {
+  from {
+    -webkit-transform: translateX(-400px); }
+  to {
+    -webkit-transform: translateX(1350px); } }
 
 #birds {
   height: 400px;
@@ -237,18 +198,16 @@ header.landing {
   position: relative;
   top: 0;
   left: 0;
-  background: linear-gradient(to bottom, #326fc0 0%, #eb9291 60%,#eb7 100%);
-  
-  .wire {
+  background: linear-gradient(to bottom, #326fc0 0%, #eb9291 60%, #eb7 100%); }
+  #birds .wire {
     background: #000;
     position: absolute;
     bottom: 60px;
     left: 0px;
     width: 100%;
     height: 1px;
-    border-bottom: 1px solid #666;
-  }
-  .birdwrapper {
+    border-bottom: 1px solid #666; }
+  #birds .birdwrapper {
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -256,12 +215,12 @@ header.landing {
     bottom: 10px;
     position: absolute;
     width: 100%;
-    height: 150px;
-    .bird1 {
+    height: 150px; }
+    #birds .birdwrapper .bird1 {
       position: absolute;
       left: 17%;
-      bottom: 0px;
-      .head {
+      bottom: 0px; }
+      #birds .birdwrapper .bird1 .head {
         position: absolute;
         left: 27px;
         bottom: 94px;
@@ -269,9 +228,8 @@ header.landing {
         height: 24px;
         width: 19px;
         -webkit-border-radius: 50%;
-        border-radius: 50%;
-      }
-      .beak {
+        border-radius: 50%; }
+      #birds .birdwrapper .bird1 .beak {
         position: absolute;
         left: 38px;
         bottom: 103px;
@@ -284,9 +242,8 @@ header.landing {
         -moz-transform: rotate(17deg);
         -ms-transform: rotate(17deg);
         -o-transform: rotate(17deg);
-        transform: rotate(17deg);
-      }
-      .body {
+        transform: rotate(17deg); }
+      #birds .birdwrapper .bird1 .body {
         position: absolute;
         bottom: 50px;
         left: 20px;
@@ -294,11 +251,8 @@ header.landing {
         height: 60px;
         width: 32px;
         -webkit-border-radius: 50% 50% 50% 50% / 35% 35% 65% 65%;
-        border-radius: 50% 50% 50% 50% / 35% 35% 65% 65%;
-      }
-      
-      &:before,
-      &:after {
+        border-radius: 50% 50% 50% 50% / 35% 35% 65% 65%; }
+      #birds .birdwrapper .bird1:before, #birds .birdwrapper .bird1:after {
         content: "";
         position: absolute;
         border-bottom: 35px solid #000;
@@ -310,50 +264,42 @@ header.landing {
         -moz-transform: rotate(-155deg);
         -ms-transform: rotate(-155deg);
         -o-transform: rotate(-155deg);
-        transform: rotate(-155deg);
-      }
-      
-      &:after {
+        transform: rotate(-155deg); }
+      #birds .birdwrapper .bird1:after {
         bottom: 28px;
         left: 30px;
         -webkit-transform: rotate(165deg);
         -moz-transform: rotate(165deg);
         -ms-transform: rotate(165deg);
         -o-transform: rotate(165deg);
-        transform: rotate(165deg);
-      }
-      .wing-left, .wing-right {
+        transform: rotate(165deg); }
+      #birds .birdwrapper .bird1 .wing-left, #birds .birdwrapper .bird1 .wing-right {
         position: absolute;
         bottom: 40px;
         height: 30px;
         width: 4px;
         background: #000;
         -webkit-border-radius: 50% 50% 50% 50% / 15% 15% 85% 85%;
-        border-radius: 50% 50% 50% 50% / 15% 15% 85% 85%;
-      }
-      .wing-left {
+        border-radius: 50% 50% 50% 50% / 15% 15% 85% 85%; }
+      #birds .birdwrapper .bird1 .wing-left {
         left: 27px;
         -webkit-transform: rotate(-18deg);
         -moz-transform: rotate(-18deg);
         -ms-transform: rotate(-18deg);
         -o-transform: rotate(-18deg);
-        transform: rotate(-18deg);
-      }
-      .wing-right {
+        transform: rotate(-18deg); }
+      #birds .birdwrapper .bird1 .wing-right {
         left: 40px;
         -webkit-transform: rotate(18deg);
         -moz-transform: rotate(18deg);
         -ms-transform: rotate(18deg);
         -o-transform: rotate(18deg);
-        transform: rotate(18deg);
-      }
-    }
-    
-    .bird2 {
+        transform: rotate(18deg); }
+    #birds .birdwrapper .bird2 {
       position: absolute;
       left: 27%;
-      bottom: 0px;
-      .head {
+      bottom: 0px; }
+      #birds .birdwrapper .bird2 .head {
         position: absolute;
         left: 29px;
         bottom: 95px;
@@ -361,9 +307,8 @@ header.landing {
         height: 22px;
         width: 19px;
         -webkit-border-radius: 50%;
-        border-radius: 50%;
-      }
-      .beak {
+        border-radius: 50%; }
+      #birds .birdwrapper .bird2 .beak {
         position: absolute;
         left: 42px;
         bottom: 101px;
@@ -376,9 +321,8 @@ header.landing {
         -moz-transform: rotate(30deg);
         -ms-transform: rotate(30deg);
         -o-transform: rotate(30deg);
-        transform: rotate(30deg);
-      }
-      .body {
+        transform: rotate(30deg); }
+      #birds .birdwrapper .bird2 .body {
         position: absolute;
         bottom: 50px;
         left: 20px;
@@ -391,10 +335,8 @@ header.landing {
         -moz-transform: rotate(7deg);
         -ms-transform: rotate(7deg);
         -o-transform: rotate(7deg);
-        transform: rotate(7deg);
-      }
-      &:before,
-      &:after {
+        transform: rotate(7deg); }
+      #birds .birdwrapper .bird2:before, #birds .birdwrapper .bird2:after {
         content: "";
         position: absolute;
         border-bottom: 42px solid #000;
@@ -406,50 +348,42 @@ header.landing {
         -moz-transform: rotate(-160deg);
         -ms-transform: rotate(-160deg);
         -o-transform: rotate(-160deg);
-        transform: rotate(-160deg);
-      }
-      
-      &:after {
+        transform: rotate(-160deg); }
+      #birds .birdwrapper .bird2:after {
         left: 28px;
         right: 3px;
         -webkit-transform: rotate(160deg);
         -moz-transform: rotate(160deg);
         -ms-transform: rotate(160deg);
         -o-transform: rotate(160deg);
-        transform: rotate(160deg);
-      }
-      .wing-left, .wing-right {
+        transform: rotate(160deg); }
+      #birds .birdwrapper .bird2 .wing-left, #birds .birdwrapper .bird2 .wing-right {
         position: absolute;
         bottom: 40px;
         height: 30px;
         width: 4px;
         background: #000;
         -webkit-border-radius: 50% 50% 50% 50% / 15% 15% 85% 85%;
-        border-radius: 50% 50% 50% 50% / 15% 15% 85% 85%;
-      }
-      .wing-left {
+        border-radius: 50% 50% 50% 50% / 15% 15% 85% 85%; }
+      #birds .birdwrapper .bird2 .wing-left {
         left: 25px;
         -webkit-transform: rotate(-13deg);
         -moz-transform: rotate(-13deg);
         -ms-transform: rotate(-13deg);
         -o-transform: rotate(-13deg);
-        transform: rotate(-13deg);
-      }
-      .wing-right {
+        transform: rotate(-13deg); }
+      #birds .birdwrapper .bird2 .wing-right {
         left: 37px;
         -webkit-transform: rotate(25deg);
         -moz-transform: rotate(25deg);
         -ms-transform: rotate(25deg);
         -o-transform: rotate(25deg);
-        transform: rotate(25deg);
-      }
-    }
-    
-    .bird3 {
+        transform: rotate(25deg); }
+    #birds .birdwrapper .bird3 {
       position: absolute;
       left: 33%;
-      bottom: 0px;
-      .head {
+      bottom: 0px; }
+      #birds .birdwrapper .bird3 .head {
         position: absolute;
         left: 24px;
         bottom: 94px;
@@ -457,9 +391,8 @@ header.landing {
         height: 21px;
         width: 20px;
         -webkit-border-radius: 50%;
-        border-radius: 50%;
-      }
-      .beak {
+        border-radius: 50%; }
+      #birds .birdwrapper .bird3 .beak {
         position: absolute;
         left: 20px;
         bottom: 95px;
@@ -472,9 +405,8 @@ header.landing {
         -moz-transform: rotate(-17deg);
         -ms-transform: rotate(-17deg);
         -o-transform: rotate(-17deg);
-        transform: rotate(-17deg);
-      }
-      .body {
+        transform: rotate(-17deg); }
+      #birds .birdwrapper .bird3 .body {
         position: absolute;
         bottom: 51px;
         left: 20px;
@@ -487,9 +419,8 @@ header.landing {
         -moz-transform: rotate(-7deg);
         -ms-transform: rotate(-7deg);
         -o-transform: rotate(-7deg);
-        transform: rotate(-7deg);
-        &:before,
-        &:after {
+        transform: rotate(-7deg); }
+        #birds .birdwrapper .bird3 .body:before, #birds .birdwrapper .bird3 .body:after {
           content: "";
           position: absolute;
           border-bottom: 30px solid #000;
@@ -501,52 +432,42 @@ header.landing {
           -moz-transform: rotate(-165deg);
           -ms-transform: rotate(-165deg);
           -o-transform: rotate(-165deg);
-          transform: rotate(-165deg);
-        }
-        
-        &:after {
+          transform: rotate(-165deg); }
+        #birds .birdwrapper .bird3 .body:after {
           left: auto;
           right: 1px;
           -webkit-transform: rotate(150deg);
           -moz-transform: rotate(150deg);
           -ms-transform: rotate(150deg);
           -o-transform: rotate(150deg);
-          transform: rotate(150deg);
-        }
-      }
-
-      .wing-left, .wing-right {
+          transform: rotate(150deg); }
+      #birds .birdwrapper .bird3 .wing-left, #birds .birdwrapper .bird3 .wing-right {
         position: absolute;
         bottom: 37px;
         height: 30px;
         width: 4px;
         background: #000;
         -webkit-border-radius: 50% 50% 50% 50% / 15% 15% 85% 85%;
-        border-radius: 50% 50% 50% 50% / 15% 15% 85% 85%;
-      }
-      .wing-left {
+        border-radius: 50% 50% 50% 50% / 15% 15% 85% 85%; }
+      #birds .birdwrapper .bird3 .wing-left {
         left: 32px;
         -webkit-transform: rotate(-26deg);
         -moz-transform: rotate(-26deg);
         -ms-transform: rotate(-26deg);
         -o-transform: rotate(-26deg);
-        transform: rotate(-26deg);
-      }
-      .wing-right {
+        transform: rotate(-26deg); }
+      #birds .birdwrapper .bird3 .wing-right {
         left: 46px;
         -webkit-transform: rotate(7deg);
         -moz-transform: rotate(7deg);
         -ms-transform: rotate(7deg);
         -o-transform: rotate(7deg);
-        transform: rotate(7deg);
-      }
-    }
-
-    .bird4 {
+        transform: rotate(7deg); }
+    #birds .birdwrapper .bird4 {
       position: absolute;
       left: 44%;
-      bottom: 0px;
-      .head {
+      bottom: 0px; }
+      #birds .birdwrapper .bird4 .head {
         position: absolute;
         left: 24px;
         bottom: 94px;
@@ -554,9 +475,8 @@ header.landing {
         height: 21px;
         width: 19px;
         -webkit-border-radius: 50%;
-        border-radius: 50%;
-      }
-      .beak {
+        border-radius: 50%; }
+      #birds .birdwrapper .bird4 .beak {
         position: absolute;
         left: 35px;
         bottom: 108px;
@@ -569,9 +489,8 @@ header.landing {
         -moz-transform: rotate(127deg);
         -ms-transform: rotate(127deg);
         -o-transform: rotate(127deg);
-        transform: rotate(127deg);
-      }
-      .body {
+        transform: rotate(127deg); }
+      #birds .birdwrapper .bird4 .body {
         position: absolute;
         bottom: 50px;
         left: 20px;
@@ -584,9 +503,8 @@ header.landing {
         -moz-transform: rotate(4deg);
         -ms-transform: rotate(4deg);
         -o-transform: rotate(4deg);
-        transform: rotate(4deg);
-        &:before,
-        &:after {
+        transform: rotate(4deg); }
+        #birds .birdwrapper .bird4 .body:before, #birds .birdwrapper .bird4 .body:after {
           content: "";
           position: absolute;
           border-bottom: 42px solid #000;
@@ -598,53 +516,42 @@ header.landing {
           -moz-transform: rotate(-155deg);
           -ms-transform: rotate(-155deg);
           -o-transform: rotate(-155deg);
-          transform: rotate(-155deg);
-        }
-        
-        &:after {
+          transform: rotate(-155deg); }
+        #birds .birdwrapper .bird4 .body:after {
           left: auto;
           right: 8px;
           -webkit-transform: rotate(170deg);
           -moz-transform: rotate(170deg);
           -ms-transform: rotate(170deg);
           -o-transform: rotate(170deg);
-          transform: rotate(170deg);
-        }
-      }
-  
-      .wing-left, .wing-right {
+          transform: rotate(170deg); }
+      #birds .birdwrapper .bird4 .wing-left, #birds .birdwrapper .bird4 .wing-right {
         position: absolute;
         bottom: 37px;
         height: 30px;
         width: 3px;
         background: #000;
         -webkit-border-radius: 50% 50% 50% 50% / 15% 15% 85% 85%;
-        border-radius: 50% 50% 50% 50% / 15% 15% 85% 85%;
-      }
-      .wing-left {
+        border-radius: 50% 50% 50% 50% / 15% 15% 85% 85%; }
+      #birds .birdwrapper .bird4 .wing-left {
         left: 22px;
         -webkit-transform: rotate(-3deg);
         -moz-transform: rotate(-3deg);
         -ms-transform: rotate(-3deg);
         -o-transform: rotate(-3deg);
-        transform: rotate(-3deg);
-      }
-      .wing-right {
+        transform: rotate(-3deg); }
+      #birds .birdwrapper .bird4 .wing-right {
         left: 30px;
         -webkit-transform: rotate(12deg);
         -moz-transform: rotate(12deg);
         -ms-transform: rotate(12deg);
         -o-transform: rotate(12deg);
-        transform: rotate(12deg);
-      }
-    }
-    
-    
-    .bird5 {
+        transform: rotate(12deg); }
+    #birds .birdwrapper .bird5 {
       position: absolute;
       left: 52%;
-      bottom: 0px;
-      .head {
+      bottom: 0px; }
+      #birds .birdwrapper .bird5 .head {
         position: absolute;
         left: 25px;
         bottom: 92px;
@@ -652,9 +559,8 @@ header.landing {
         height: 24px;
         width: 19px;
         -webkit-border-radius: 50%;
-        border-radius: 50%;
-      }
-      .beak {
+        border-radius: 50%; }
+      #birds .birdwrapper .bird5 .beak {
         position: absolute;
         left: 22px;
         bottom: 103px;
@@ -667,9 +573,8 @@ header.landing {
         -moz-transform: rotate(-3deg);
         -ms-transform: rotate(-3deg);
         -o-transform: rotate(-3deg);
-        transform: rotate(-3deg);
-      }
-      .body {
+        transform: rotate(-3deg); }
+      #birds .birdwrapper .bird5 .body {
         position: absolute;
         bottom: 50px;
         left: 20px;
@@ -682,9 +587,8 @@ header.landing {
         -moz-transform: rotate(2deg);
         -ms-transform: rotate(2deg);
         -o-transform: rotate(2deg);
-        transform: rotate(2deg);
-        &:before,
-        &:after {
+        transform: rotate(2deg); }
+        #birds .birdwrapper .bird5 .body:before, #birds .birdwrapper .bird5 .body:after {
           content: "";
           position: absolute;
           border-bottom: 35px solid #000;
@@ -696,52 +600,42 @@ header.landing {
           -moz-transform: rotate(-165deg);
           -ms-transform: rotate(-165deg);
           -o-transform: rotate(-165deg);
-          transform: rotate(-165deg);
-        }
-        
-        &:after {
+          transform: rotate(-165deg); }
+        #birds .birdwrapper .bird5 .body:after {
           left: auto;
           right: 1px;
           -webkit-transform: rotate(150deg);
           -moz-transform: rotate(150deg);
           -ms-transform: rotate(150deg);
           -o-transform: rotate(150deg);
-          transform: rotate(150deg);
-        }
-      }
-      
-      .wing-left, .wing-right {
+          transform: rotate(150deg); }
+      #birds .birdwrapper .bird5 .wing-left, #birds .birdwrapper .bird5 .wing-right {
         position: absolute;
         bottom: 40px;
         height: 30px;
         width: 4px;
         background: #000;
         -webkit-border-radius: 50% 50% 50% 50% / 25% 25% 75% 75%;
-        border-radius: 50% 50% 50% 50% / 25% 25% 75% 75%;
-      }
-      .wing-left {
+        border-radius: 50% 50% 50% 50% / 25% 25% 75% 75%; }
+      #birds .birdwrapper .bird5 .wing-left {
         left: 27px;
         -webkit-transform: rotate(-21deg);
         -moz-transform: rotate(-21deg);
         -ms-transform: rotate(-21deg);
         -o-transform: rotate(-21deg);
-        transform: rotate(-21deg);
-      }
-      .wing-right {
+        transform: rotate(-21deg); }
+      #birds .birdwrapper .bird5 .wing-right {
         left: 41px;
         -webkit-transform: rotate(19deg);
         -moz-transform: rotate(19deg);
         -ms-transform: rotate(19deg);
         -o-transform: rotate(19deg);
-        transform: rotate(19deg);
-      }
-    }
-    
-    .bird6 {
+        transform: rotate(19deg); }
+    #birds .birdwrapper .bird6 {
       position: absolute;
       left: 61%;
-      bottom: 0px;
-      .head {
+      bottom: 0px; }
+      #birds .birdwrapper .bird6 .head {
         position: absolute;
         left: 28px;
         bottom: 96px;
@@ -749,9 +643,8 @@ header.landing {
         height: 24px;
         width: 20px;
         -webkit-border-radius: 50%;
-        border-radius: 50%;
-      }
-      .beak {
+        border-radius: 50%; }
+      #birds .birdwrapper .bird6 .beak {
         position: absolute;
         left: 38px;
         bottom: 103px;
@@ -764,9 +657,8 @@ header.landing {
         -moz-transform: rotate(17deg);
         -ms-transform: rotate(17deg);
         -o-transform: rotate(17deg);
-        transform: rotate(17deg);
-      }
-      .body {
+        transform: rotate(17deg); }
+      #birds .birdwrapper .bird6 .body {
         position: absolute;
         bottom: 50px;
         left: 20px;
@@ -779,11 +671,8 @@ header.landing {
         -moz-transform: rotate(4deg);
         -ms-transform: rotate(4deg);
         -o-transform: rotate(4deg);
-        transform: rotate(4deg);
-      }
-      
-      &:before,
-      &:after {
+        transform: rotate(4deg); }
+      #birds .birdwrapper .bird6:before, #birds .birdwrapper .bird6:after {
         content: "";
         position: absolute;
         border-bottom: 38px solid #000;
@@ -795,50 +684,42 @@ header.landing {
         -moz-transform: rotate(-160deg);
         -ms-transform: rotate(-160deg);
         -o-transform: rotate(-160deg);
-        transform: rotate(-160deg);
-      }
-      
-      &:after {
+        transform: rotate(-160deg); }
+      #birds .birdwrapper .bird6:after {
         bottom: 30px;
         left: 30px;
         -webkit-transform: rotate(160deg);
         -moz-transform: rotate(160deg);
         -ms-transform: rotate(160deg);
         -o-transform: rotate(160deg);
-        transform: rotate(160deg);
-      }
-      .wing-left, .wing-right {
+        transform: rotate(160deg); }
+      #birds .birdwrapper .bird6 .wing-left, #birds .birdwrapper .bird6 .wing-right {
         position: absolute;
         bottom: 40px;
         height: 30px;
         width: 4px;
         background: #000;
         -webkit-border-radius: 50% 50% 50% 50% / 15% 15% 85% 85%;
-        border-radius: 50% 50% 50% 50% / 15% 15% 85% 85%;
-      }
-      .wing-left {
+        border-radius: 50% 50% 50% 50% / 15% 15% 85% 85%; }
+      #birds .birdwrapper .bird6 .wing-left {
         left: 27px;
         -webkit-transform: rotate(-19deg);
         -moz-transform: rotate(-19deg);
         -ms-transform: rotate(-19deg);
         -o-transform: rotate(-19deg);
-        transform: rotate(-19deg);
-      }
-      .wing-right {
+        transform: rotate(-19deg); }
+      #birds .birdwrapper .bird6 .wing-right {
         left: 41px;
         -webkit-transform: rotate(22deg);
         -moz-transform: rotate(22deg);
         -ms-transform: rotate(22deg);
         -o-transform: rotate(22deg);
-        transform: rotate(22deg);
-      }
-    }
-    
-    .bird7 {
+        transform: rotate(22deg); }
+    #birds .birdwrapper .bird7 {
       position: absolute;
       left: 68%;
-      bottom: 0px;
-      .head {
+      bottom: 0px; }
+      #birds .birdwrapper .bird7 .head {
         position: absolute;
         left: 12px;
         bottom: 92px;
@@ -846,9 +727,8 @@ header.landing {
         height: 20px;
         width: 18px;
         -webkit-border-radius: 50%;
-        border-radius: 50%;
-      }
-      .beak {
+        border-radius: 50%; }
+      #birds .birdwrapper .bird7 .beak {
         position: absolute;
         left: 6px;
         bottom: 99px;
@@ -861,9 +741,8 @@ header.landing {
         -moz-transform: rotate(7deg);
         -ms-transform: rotate(7deg);
         -o-transform: rotate(7deg);
-        transform: rotate(7deg);
-      }
-      .body {
+        transform: rotate(7deg); }
+      #birds .birdwrapper .bird7 .body {
         position: absolute;
         bottom: 48px;
         left: 20px;
@@ -876,9 +755,8 @@ header.landing {
         -moz-transform: rotate(-27deg);
         -ms-transform: rotate(-27deg);
         -o-transform: rotate(-27deg);
-        transform: rotate(-27deg);
-        &:before,
-        &:after {
+        transform: rotate(-27deg); }
+        #birds .birdwrapper .bird7 .body:before, #birds .birdwrapper .bird7 .body:after {
           content: "";
           position: absolute;
           border-bottom: 60px solid #000;
@@ -890,53 +768,43 @@ header.landing {
           -moz-transform: rotate(-180deg);
           -ms-transform: rotate(-180deg);
           -o-transform: rotate(-180deg);
-          transform: rotate(-180deg);
-        }
-        &:after {
+          transform: rotate(-180deg); }
+        #birds .birdwrapper .bird7 .body:after {
           left: auto;
           right: -5px;
           -webkit-transform: rotate(145deg);
           -moz-transform: rotate(145deg);
           -ms-transform: rotate(145deg);
           -o-transform: rotate(145deg);
-          transform: rotate(145deg);
-        }
-      }
-
-      .wing-left, .wing-right {
+          transform: rotate(145deg); }
+      #birds .birdwrapper .bird7 .wing-left, #birds .birdwrapper .bird7 .wing-right {
         position: absolute;
         bottom: 42px;
         height: 35px;
         width: 4px;
         background: #000;
         -webkit-border-radius: 50% 50% 50% 50% / 15% 15% 85% 85%;
-        border-radius: 50% 50% 50% 50% / 15% 15% 85% 85%;
-      }
-      .wing-left {
+        border-radius: 50% 50% 50% 50% / 15% 15% 85% 85%; }
+      #birds .birdwrapper .bird7 .wing-left {
         left: 45px;
         bottom: 33px;
         -webkit-transform: rotate(-55deg);
         -moz-transform: rotate(-55deg);
         -ms-transform: rotate(-55deg);
         -o-transform: rotate(-55deg);
-        transform: rotate(-55deg);
-      }
-      .wing-right {
+        transform: rotate(-55deg); }
+      #birds .birdwrapper .bird7 .wing-right {
         left: 50px;
         -webkit-transform: rotate(-26deg);
         -moz-transform: rotate(-26deg);
         -ms-transform: rotate(-26deg);
         -o-transform: rotate(-26deg);
-        transform: rotate(-26deg);
-      }
-    }
-    
-  
-    .bird8 {
+        transform: rotate(-26deg); }
+    #birds .birdwrapper .bird8 {
       position: absolute;
       left: 77%;
-      bottom: 0px;
-      .head {
+      bottom: 0px; }
+      #birds .birdwrapper .bird8 .head {
         position: absolute;
         left: 24px;
         bottom: 94px;
@@ -944,9 +812,8 @@ header.landing {
         height: 21px;
         width: 18px;
         -webkit-border-radius: 50%;
-        border-radius: 50%;
-      }
-      .beak {
+        border-radius: 50%; }
+      #birds .birdwrapper .bird8 .beak {
         position: absolute;
         left: 19px;
         bottom: 104px;
@@ -959,9 +826,8 @@ header.landing {
         -moz-transform: rotate(26deg);
         -ms-transform: rotate(26deg);
         -o-transform: rotate(26deg);
-        transform: rotate(26deg);
-      }
-      .body {
+        transform: rotate(26deg); }
+      #birds .birdwrapper .bird8 .body {
         position: absolute;
         bottom: 51px;
         left: 21px;
@@ -974,9 +840,8 @@ header.landing {
         -moz-transform: rotate(-7deg);
         -ms-transform: rotate(-7deg);
         -o-transform: rotate(-7deg);
-        transform: rotate(-7deg);
-        &:before,
-        &:after {
+        transform: rotate(-7deg); }
+        #birds .birdwrapper .bird8 .body:before, #birds .birdwrapper .bird8 .body:after {
           content: "";
           position: absolute;
           border-bottom: 38px solid #000;
@@ -988,46 +853,34 @@ header.landing {
           -moz-transform: rotate(-170deg);
           -ms-transform: rotate(-170deg);
           -o-transform: rotate(-170deg);
-          transform: rotate(-170deg);
-        }
-        
-        &:after {
+          transform: rotate(-170deg); }
+        #birds .birdwrapper .bird8 .body:after {
           left: auto;
           right: 0px;
           -webkit-transform: rotate(155deg);
           -moz-transform: rotate(155deg);
           -ms-transform: rotate(155deg);
           -o-transform: rotate(155deg);
-          transform: rotate(155deg);
-        }
-      }
-
-      .wing-left, .wing-right {
+          transform: rotate(155deg); }
+      #birds .birdwrapper .bird8 .wing-left, #birds .birdwrapper .bird8 .wing-right {
         position: absolute;
         bottom: 37px;
         height: 30px;
         width: 4px;
         background: #000;
         -webkit-border-radius: 50% 50% 50% 50% / 35% 35% 65% 65%;
-        border-radius: 50% 50% 50% 50% / 35% 35% 65% 65%;
-      }
-      .wing-left {
+        border-radius: 50% 50% 50% 50% / 35% 35% 65% 65%; }
+      #birds .birdwrapper .bird8 .wing-left {
         left: 33px;
         -webkit-transform: rotate(-35deg);
         -moz-transform: rotate(-35deg);
         -ms-transform: rotate(-35deg);
         -o-transform: rotate(-35deg);
-        transform: rotate(-35deg);
-      }
-      .wing-right {
+        transform: rotate(-35deg); }
+      #birds .birdwrapper .bird8 .wing-right {
         left: 45px;
         -webkit-transform: rotate(-1deg);
         -moz-transform: rotate(-1deg);
         -ms-transform: rotate(-1deg);
         -o-transform: rotate(-1deg);
-        transform: rotate(-1deg);
-      }
-    }
-  }
-}
-
+        transform: rotate(-1deg); }
