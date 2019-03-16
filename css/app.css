@@ -7245,9 +7245,6 @@ label.panel-block {
 
 .cd-timeline__container {
   position: relative;
-  width: 90%;
-  max-width: 1170px;
-  margin: 0 auto;
   padding: 2em 0; }
 
 .cd-timeline__container::before {
@@ -7716,6 +7713,24 @@ header.landing nav {
   top: 0;
   left: 0;
   background: linear-gradient(to bottom, #326fc0 0%, #eb9291 60%, #eb7 100%); }
+  #story .cd-timeline__date {
+    margin: 0;
+    padding: 0;
+    color: #fff; }
+  #story .cd-timeline__img {
+    text-align: center; }
+    #story .cd-timeline__img svg {
+      font-size: 2em;
+      color: #fff;
+      top: 45%;
+      top: calc(50% - 0.5em);
+      position: relative; }
+  #story .work {
+    background-color: #00d1b2; }
+  #story .travel {
+    background-color: #209cee; }
+  #story .question {
+    background-color: #FF3860; }
   #story #birds .wire {
     background: #000;
     position: absolute;
@@ -8395,3 +8410,21 @@ header.landing nav {
         -ms-transform: rotate(-1deg);
         -o-transform: rotate(-1deg);
         transform: rotate(-1deg); }
+
+footer.footer {
+  background: #262626;
+  background-color: #262626;
+  padding-bottom: 3rem; }
+  footer.footer a:hover {
+    color: #fff; }
+  footer.footer p {
+    margin-top: 2em;
+    color: #fff; }
+    footer.footer p strong {
+      color: #fff; }
+    footer.footer p .heart {
+      font-size: 1.5em;
+      color: #7D0F15; }
+  footer.footer svg {
+    font-size: 3em;
+    margin: 0 0.25em; }

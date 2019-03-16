@@ -5,6 +5,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.0.2",
     "gulp-update": "0.0.2",
+    "jquery": "^3.3.1",
     "normalize.css": "^8.0.1",
     "particlesjs": "^2.0.0"
   },

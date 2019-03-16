@@ -30,6 +30,7 @@ gulp.task('css', function () {
 gulp.task('js', function () {
     return gulp.src([
         './node_modules/@fortawesome/fontawesome-free/js/all.min.js',
+        './node_modules/jquery/dist/jquery.min.js',
         './resources/js/particles.min.js',
         './resources/js/timeline.js',
         './resources/js/main.js',

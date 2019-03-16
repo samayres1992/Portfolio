@@ -1,15 +1,23 @@
-/* Particles */
+$(document).ready(function() {
+  /* Navbar */
+  // Check for click events on the navbar burger icon
+  $(".navbar-burger").click(function() {
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      $(".navbar-burger").toggleClass("is-active");
+      $(".navbar-menu").toggleClass("is-active");
+  });
 
-particlesJS(
-  "galaxy", {
-    "particles": {
-      "number": {
-        "value": 2,
-        "density": {
-          "enable": true,
-          "value_area": 50
-        }
-      },
+  /* Particles */
+  particlesJS(
+    "galaxy", {
+     "particles": {
+        "number": {
+          "value": 2,
+          "density": {
+           "enable": true,
+           "value_area": 50
+          }
+        },
       "color": {
         "value": ["#de0061", "#00a2a5", "#a8c94d"]
       },
@@ -72,4 +80,5 @@ particlesJS(
       "particles_nb": 2
     },
     "retina_detect": true
+  });
 });
