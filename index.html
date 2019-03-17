@@ -4,7 +4,6 @@
         <title>Sam Ayres - Web Design &amp; Development</title>
         <link rel="stylesheet" href="css/app.css">
     </head>
-
     <body>
         <header class="landing">
             <nav class="navbar is-fixed-top tabs is-centered">
@@ -49,7 +48,7 @@
             <div class="c-container">
                 <div class="comet"></div>
             </div>
-            <a href="#clouds"><i class="fas fa-arrow-alt-circle-down landing-down"></i></a>
+            <a href="#clouds" id="down-arrow"><i class="fas fa-arrow-alt-circle-down landing-down"></i></a>
         </section>
         <section id="clouds">
             <div class="container show-off">
@@ -127,8 +126,8 @@
                         </div>
             
                         <div class="cd-timeline__block js-cd-block">
-                            <div class="cd-timeline__img cd-timeline__img--movie js-cd-img work">
-                                <i class="fas fa-briefcase"></i>
+                            <div class="cd-timeline__img cd-timeline__img--movie js-cd-img university">
+                                <i class="fas fa-university"></i>
                             </div>
             
                             <div class="cd-timeline__content js-cd-content">
@@ -272,6 +271,15 @@
                 </div>
             </div>
         </footer>
-        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>   
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136344345-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-136344345-1');
+        </script>
     </body>
 </html>

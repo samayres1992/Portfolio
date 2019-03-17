@@ -43,8 +43,15 @@ header.landing {
         }
       }
     }
-    .navbar-right {
-
+  }
+  .white {
+    background-color: #fff;
+    ul {
+      li {
+        a {
+          color: #3273dc;
+        }
+      }
     }
   }
 }
@@ -281,6 +288,10 @@ header.landing {
 
   .work {
     background-color: #00d1b2;
+  }
+
+  .university {
+    background-color: #7851a9;
   }
 
   .travel {

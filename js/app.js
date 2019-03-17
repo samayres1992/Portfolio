@@ -91,6 +91,12 @@ $(document).ready(function() {
       $(".navbar-menu").toggleClass("is-active");
   });
 
+  $(document).on('scroll', function() {
+    if($(this).scrollTop()>=$('#down-arrow').position().top){
+        jQuery("nav.navbar").addClass("white-nav");
+    }
+  });
+
   /* Particles */
   particlesJS(
     "galaxy", {
