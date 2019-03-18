@@ -29,6 +29,11 @@ header.landing {
     border-bottom-color: #dbdbdb;
     border-bottom-style: solid;
     border-bottom-width: 1px;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    
+    transition: background-color 1s ease-out;
     ul {
       border-bottom: none;
       li {
@@ -44,10 +49,19 @@ header.landing {
       }
     }
   }
-  .white {
+  .white-nav {
     background-color: #fff;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
     ul {
       li {
+        a {
+          color: #4a4a4a;
+        }
+      }
+      li.is-active {
         a {
           color: #3273dc;
         }
@@ -223,6 +237,7 @@ header.landing {
   background: #326fc0;
   background-image: linear-gradient(to bottom, #0f022e, #1a1e4f, #273773, #2f5299, #326fc0);
   overflow: hidden;
+  position: relative;
 
   .show-off {
     z-index: 10;
@@ -238,7 +253,7 @@ header.landing {
   }
   
   .cloud-1 {
-    top: 80px;
+    bottom: -70px;
     fill: #eee;
     /* Animation shorthand syntax order: name, duration, timing-function, delay, iteration-count, direction, fill-mode */
     -webkit-animation: move 20s linear infinite;
@@ -268,6 +283,27 @@ header.landing {
   top: 0;
   left: 0;
   background: linear-gradient(to bottom, #326fc0 0%, #eb9291 60%,#eb7 100%);
+
+  .clouds {
+    width: 200x;
+    height: 300px;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .cloud-2 {
+    top: 100px;
+    fill: #eee;
+    -webkit-animation: move 35s linear 10s infinite backwards;
+    -moz-animation: move 35s linear 10s infinite backwards;
+    -o-animation: move 35s linear 10s infinite backwards;
+    animation: move 35s linear 10s infinite backwards;
+  }
+    
+  @-webkit-keyframes move {
+    from {-webkit-transform: translateX(-400px);}
+    to {-webkit-transform: translateX(1350px);}
+  }
 
   .cd-timeline__date {
     margin: 0;

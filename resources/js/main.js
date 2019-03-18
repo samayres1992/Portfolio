@@ -9,7 +9,9 @@ $(document).ready(function() {
 
   $(document).on('scroll', function() {
     if($(this).scrollTop()>=$('#down-arrow').position().top){
-        jQuery("nav.navbar").addClass("white-nav");
+      jQuery("nav.navbar").addClass("white-nav");
+    } else {
+      jQuery("nav.navbar").removeClass("white-nav");
     }
   });
 

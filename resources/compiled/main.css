@@ -22,7 +22,11 @@ header.landing nav {
   z-index: 2;
   border-bottom-color: #dbdbdb;
   border-bottom-style: solid;
-  border-bottom-width: 1px; }
+  border-bottom-width: 1px;
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out; }
   header.landing nav ul {
     border-bottom: none; }
     header.landing nav ul li a {
@@ -33,9 +37,15 @@ header.landing nav {
         border-bottom-color: #3273dc;
         color: #3273dc; }
 
-header.landing .white {
-  background-color: #fff; }
-  header.landing .white ul li a {
+header.landing .white-nav {
+  background-color: #fff;
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out; }
+  header.landing .white-nav ul li a {
+    color: #4a4a4a; }
+  header.landing .white-nav ul li.is-active a {
     color: #3273dc; }
 
 #galaxy {
@@ -178,7 +188,8 @@ header.landing .white {
   position: relative;
   background: #326fc0;
   background-image: linear-gradient(to bottom, #0f022e, #1a1e4f, #273773, #2f5299, #326fc0);
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
   #clouds .show-off {
     z-index: 10;
     margin-top: 5em;
@@ -189,7 +200,7 @@ header.landing .white {
     position: absolute;
     z-index: 2; }
   #clouds .cloud-1 {
-    top: 80px;
+    bottom: -70px;
     fill: #eee;
     /* Animation shorthand syntax order: name, duration, timing-function, delay, iteration-count, direction, fill-mode */
     -webkit-animation: move 20s linear infinite;
@@ -216,6 +227,24 @@ header.landing .white {
   top: 0;
   left: 0;
   background: linear-gradient(to bottom, #326fc0 0%, #eb9291 60%, #eb7 100%); }
+  #story .clouds {
+    width: 200x;
+    height: 300px;
+    position: absolute;
+    z-index: 2; }
+  #story .cloud-2 {
+    top: 100px;
+    fill: #eee;
+    -webkit-animation: move 35s linear 10s infinite backwards;
+    -moz-animation: move 35s linear 10s infinite backwards;
+    -o-animation: move 35s linear 10s infinite backwards;
+    animation: move 35s linear 10s infinite backwards; }
+
+@-webkit-keyframes move {
+  from {
+    -webkit-transform: translateX(-400px); }
+  to {
+    -webkit-transform: translateX(1350px); } }
   #story .cd-timeline__date {
     margin: 0;
     padding: 0;

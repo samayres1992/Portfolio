@@ -12,7 +12,8 @@
 
 .cd-timeline__container {
   position: relative;
-  padding: 2em 0; }
+  padding: 2em 0;
+  z-index: 12; }
 
 .cd-timeline__container::before {
   /* this is the vertical line */
