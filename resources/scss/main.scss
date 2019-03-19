@@ -32,7 +32,7 @@ header.landing {
     -webkit-transition: background-color 1s ease-out;
     -moz-transition: background-color 1s ease-out;
     -o-transition: background-color 1s ease-out;
-    
+
     transition: background-color 1s ease-out;
     ul {
       border-bottom: none;
@@ -230,7 +230,7 @@ header.landing {
   box-shadow: 0px 0px 75px 2px white;
 }
 
-#clouds {
+#work {
 	width: 100%;
   height: 700px;
   position: relative;
@@ -277,7 +277,7 @@ header.landing {
   }
 }
 
-#story {
+#timeline {
   width: 100%;
   position: relative;
   top: 0;
@@ -304,7 +304,7 @@ header.landing {
     from {-webkit-transform: translateX(-400px);}
     to {-webkit-transform: translateX(1350px);}
   }
-
+  
   .cd-timeline__date {
     margin: 0;
     padding: 0;
@@ -1149,5 +1149,17 @@ footer.footer {
   svg {
     font-size: 3em;
     margin: 0 0.25em;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  header.landing {
+    nav  {
+      position: relative!important;
+    }
+  }
+
+  .cd-timeline__container {
+    padding: 2em 1em!important;
   }
 }
