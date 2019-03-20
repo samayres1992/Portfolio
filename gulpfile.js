@@ -8,6 +8,7 @@ gulp.task('compile-css', function () {
         './node_modules/normalize.css/normalize.css',
         './node_modules/bulma/bulma.sass',
         './resources/scss/timeline.scss',
+        './resources/scss/swiper.scss',
         './resources/scss/main.scss',
     ])
     .pipe(scss())
@@ -19,6 +20,7 @@ gulp.task('css', function () {
         './resources/compiled/normalize.css',
         './resources/compiled/bulma.css',
         './resources/compiled/timeline.css',
+        './resources/compiled/swiper.css',
         './resources/compiled/main.css',
     ])
     .pipe(concat(
@@ -33,6 +35,7 @@ gulp.task('js', function () {
         './node_modules/jquery/dist/jquery.min.js',
         './resources/js/particles.min.js',
         './resources/js/timeline.js',
+        './resources/js/swiper.min.js',
         './resources/js/main.js',
     ])
     .pipe(concat(
