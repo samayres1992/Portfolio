@@ -1,22 +1,19 @@
 $(document).ready(function() {
-  /* Navbar */
-  // Check for click events on the navbar burger icon
-  $(".navbar-burger").click(function() {
-      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-      $(".navbar-burger").toggleClass("is-active");
-      $(".navbar-menu").toggleClass("is-active");
-  });
-
   $(document).on('scroll', function() {
+    let nav = $("nav.navbar");
     if($(this).scrollTop()>=$('#down-arrow').position().top){
-      jQuery("nav.navbar").addClass("white-nav");
+      nav.addClass("white-nav");
+      nav.find(".is-active").removeClass("is-active");
+      nav.find(".work-link").addClass("is-active");
     } else {
-      jQuery("nav.navbar").removeClass("white-nav");
+      nav.removeClass("white-nav");
+      nav.find(".is-active").removeClass("is-active");
+      nav.find(".welcome-link").addClass("is-active");
     }
   });
 
   // Portfolio card
-  var swiper = new Swiper('.blog-slider', {
+  var swiper = new Swiper('.work-slider', {
     spaceBetween: 30,
     effect: 'fade',
     loop: true,
@@ -32,7 +29,7 @@ $(document).ready(function() {
 
   /* Particles */
   particlesJS(
-    "galaxy", {
+    "welcome", {
      "particles": {
         "number": {
           "value": 2,

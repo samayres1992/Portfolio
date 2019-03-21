@@ -10,9 +10,17 @@
     <header class="landing">
         <nav class="navbar is-fixed-top tabs is-centered">
             <ul class="container">
-                <li class="is-active"><a href="#galaxy">Welcome</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#timeline">Timeline</a></li>
+                <div class="navbar-start">
+                    <li class="is-active">
+                        <a class="welcome-link" href="#welcome">Welcome</a>
+                    </li>
+                    <li>
+                        <a class="work-link" href="#work">Work</a>
+                    </li>
+                    <li>
+                        <a class="timeline-link" href="#timeline">Timeline</a>
+                    </li>
+                </div>
                 <div class="navbar-end">
                     <div class="navbar-item">
                         <div class="buttons">
@@ -24,7 +32,7 @@
             </ul>
         </nav>
     </header>
-    <section id="galaxy">
+    <section id="welcome">
         <div class="plug container">
             <h1>Sam Ayres</h1>
             <h2 class="title">Web Design &amp; Development</h2>
@@ -53,47 +61,68 @@
     </section>
     <section id="work">
         <div class="container show-off">
-            <div class="blog-slider">
+            <div class="work-slider">
+                <h1 class="title">Work I'm proud of</h1>
+                <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <!-- <a href="https://github.com/samayres1992/drupal_bitbucket"> -->
+                                <img src="images/loccit.png" alt="loccit" />
+                            <!-- </a> -->
+                        </div>
+                        <div class="blog-slider__content">
+                            <span class="blog-slider__code">February 2019</span>
+                            <div class="blog-slider__title">Drupal Bitbucket Integration</div>
+                            <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Recusandae voluptate repellendus magni illo ea animi? 
+                            </div>
+                            <a href="https://github.com/samayres1992/drupal_bitbucket" class="button">Github</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="blog-slider__wrp swiper-wrapper">
                     <div class="blog-slider__item swiper-slide">
                         <div class="blog-slider__img">
-
-                            <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759872/kuldar-kalvik-799168-unsplash.jpg"
-                                alt="">
+                            <!-- <a href="https://github.com/samayres1992/loccit-dev"> -->
+                                <img src="images/loccit.png" alt="loccit" />
+                            <!-- </a> -->
                         </div>
                         <div class="blog-slider__content">
-                            <span class="blog-slider__code">26 December 2019</span>
-                            <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                            <span class="blog-slider__code">November 2018</span>
+                            <div class="blog-slider__title">Locc.it</div>
                             <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                Recusandae voluptate repellendus magni illo ea animi? </div>
-                            <a href="#" class="blog-slider__button">READ MORE</a>
+                                Recusandae voluptate repellendus magni illo ea animi? 
+                            </div>
+                            <a href="https://github.com/samayres1992/loccit-dev" class="button">Github</a>
                         </div>
                     </div>
                     <div class="blog-slider__item swiper-slide">
                         <div class="blog-slider__img">
-                            <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/jason-leung-798979-unsplash.jpg"
-                                alt="">
+                            <!-- <a href="https://github.com/samayres1992/litl.it-project"> -->
+                                <img src="images/litlit.png" alt="litl.it" />
+                            <!-- </a> -->
                         </div>
                         <div class="blog-slider__content">
-                            <span class="blog-slider__code">26 December 2019</span>
-                            <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
+                            <span class="blog-slider__code">September 2015</span>
+                            <div class="blog-slider__title">Litl.it</div>
                             <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                                 Recusandae voluptate repellendus magni illo ea animi?</div>
-                            <a href="#" class="blog-slider__button">READ MORE</a>
+                                <a href="https://github.com/samayres1992/litl.it-project" class="button">Github</a>
                         </div>
                     </div>
 
                     <div class="blog-slider__item swiper-slide">
                         <div class="blog-slider__img">
-                            <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/alessandro-capuzzi-799180-unsplash.jpg"
-                                alt="">
+                            <!-- <a href="https://github.com/samayres1992/lucy-yin"> -->
+                                <img src="images/lucy.png" alt="Lucy Yin" />
+                            <!-- </a> -->
                         </div>
                         <div class="blog-slider__content">
-                            <span class="blog-slider__code">26 December 2019</span>
-                            <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                            <span class="blog-slider__code">April 2015</span>
+                            <div class="blog-slider__title">Lucy Yin</div>
                             <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                Recusandae voluptate repellendus magni illo ea animi?</div>
-                            <a href="#" class="blog-slider__button">READ MORE</a>
+                                Recusandae voluptate repellendus magni illo ea animi?
+                            </div>
+                            <a href="https://github.com/samayres1992/lucy-yin" class="button">Github</a>
                         </div>
                     </div>
 
@@ -116,6 +145,7 @@
         </svg>
         <section class="cd-timeline js-cd-timeline container">
             <div class="cd-timeline__container">
+                <div class="pipe"></div>
                 <div class="cd-timeline__block js-cd-block">
                     <div class="cd-timeline__img cd-timeline__img--picture js-cd-img work">
                         <i class="fas fa-briefcase"></i>
@@ -298,5 +328,4 @@
         gtag('config', 'UA-136344345-1');
     </script>
 </body>
-
 </html>
