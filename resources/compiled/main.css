@@ -18,6 +18,8 @@ h3 {
   font-weight: 200; }
 
 header.landing nav {
+  position: absolute;
+  width: 100%;
   background-color: transparent;
   z-index: 22;
   border-bottom-color: transparent;
@@ -195,7 +197,7 @@ header.landing .white-nav {
 
 #work {
   width: 100%;
-  height: 30em;
+  height: 40em;
   position: relative;
   background: #326fc0;
   background-image: linear-gradient(to bottom, #0f022e, #1a1e4f, #273773, #2f5299, #326fc0);
@@ -205,6 +207,16 @@ header.landing .white-nav {
   padding-top: 8.4vh; }
   #work .show-off {
     z-index: 10; }
+    #work .show-off img {
+      width: 65%; }
+    #work .show-off .drupal-bitbucket {
+      background-color: #0747a6; }
+    #work .show-off .litl-it {
+      background-color: #0747a6; }
+    #work .show-off .locc-it {
+      background-color: #fd746c; }
+    #work .show-off .lucy-yin {
+      background-color: #36465d; }
   #work .clouds {
     width: 200x;
     height: 300px;

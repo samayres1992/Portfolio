@@ -24,6 +24,8 @@ h3 {
 
 header.landing {
   nav {
+    position: absolute;
+    width: 100%;
     background-color: transparent;
     z-index: 22;
     border-bottom-color: transparent;
@@ -263,7 +265,7 @@ header.landing {
 
 #work {
   width: 100%;
-  height: 30em;
+  height: 40em;
   position: relative;
   background: #326fc0;
   background-image: linear-gradient(to bottom, #0f022e, #1a1e4f, #273773, #2f5299, #326fc0);
@@ -274,6 +276,21 @@ header.landing {
 
   .show-off {
     z-index: 10;
+    img {
+      width: 65%;;
+    }
+    .drupal-bitbucket {
+      background-color: #0747a6;
+    }
+    .litl-it {
+      background-color: #0747a6;
+    }
+    .locc-it {
+      background-color: #fd746c;
+    }
+    .lucy-yin {
+      background-color: #36465d;
+    }
   }
 
   .clouds {
