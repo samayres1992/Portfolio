@@ -13,7 +13,6 @@ $txt-color:   #DCE3E7;
     box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
     text-align: center;
     position: relative;
-    cursor: pointer;
   
     h2 {
         color: #fff;
@@ -23,7 +22,7 @@ $txt-color:   #DCE3E7;
 
     .color-overlay{
         width: $card-width;
-        height: 350px;
+        height: 230px;
         z-index: 10;
         transition: background .3s cubic-bezier(.33,.66,.66,1);
         position: absolute;
@@ -31,10 +30,19 @@ $txt-color:   #DCE3E7;
     }
     .gradient-overlay{
         width: $card-width;
-        height: 350px;
+        height: 230px;
         z-index: 15;
         position: absolute;
         top: 150px;
+    }
+
+    .content-links {
+        padding: 1em;
+        a {
+            font-size: 2em;
+            margin: 0 0.25em;
+            color: #fff;
+        }
     }
 
     &.drupal-bitbucket:hover {

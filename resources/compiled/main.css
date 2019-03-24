@@ -30,9 +30,9 @@ header.landing nav {
   -o-transition: background-color 1s ease-out;
   transition: background-color 1s ease-out; }
   header.landing nav .navbar-start li:first-of-type a {
-    padding-left: 1.6em; }
+    padding-left: 0; }
   header.landing nav .navbar-end .navbar-item {
-    padding-right: 1.6em; }
+    padding-right: 0; }
     header.landing nav .navbar-end .navbar-item:last-of-type a {
       margin-left: 1em; }
   header.landing nav ul {
@@ -82,8 +82,7 @@ header.landing .white-nav {
 
 .plug {
   position: absolute;
-  bottom: 5em;
-  padding-left: 1.6em; }
+  bottom: 5em; }
   .plug h1,
   .plug h2,
   .plug h3 {
