@@ -22,7 +22,7 @@ $txt-color:   #DCE3E7;
 
     .color-overlay{
         width: $card-width;
-        height: 230px;
+        height: 200px;
         z-index: 10;
         transition: background .3s cubic-bezier(.33,.66,.66,1);
         position: absolute;
@@ -30,14 +30,16 @@ $txt-color:   #DCE3E7;
     }
     .gradient-overlay{
         width: $card-width;
-        height: 230px;
+        height: 200px;
         z-index: 15;
         position: absolute;
         top: 150px;
     }
 
     .content-links {
-        padding: 1em;
+        position: absolute;
+        width: 100%;
+        bottom: 60px;
         a {
             font-size: 2em;
             margin: 0 0.25em;
@@ -114,6 +116,7 @@ hr{
     z-index: 20;
     opacity: 0;
     transition: bottom .3s, opacity .3s cubic-bezier(.33,.66,.66,1);
+    font-size: 14px;
 }
 
 .utility-info{

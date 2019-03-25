@@ -7,6 +7,7 @@ gulp.task('compile-css', function () {
     return gulp.src([
         './node_modules/normalize.css/normalize.css',
         './node_modules/bulma/bulma.sass',
+        './node_modules/bulma-tooltip/dist/css/bulma-tooltip.min.css',
         './resources/scss/timeline.scss',
         './resources/scss/swiper.scss',
         './resources/scss/portfolio.scss',
@@ -20,6 +21,7 @@ gulp.task('css', function () {
     return gulp.src([
         './resources/compiled/normalize.css',
         './resources/compiled/bulma.css',
+        './resources/compiled/bulma-tooltip.min.css',
         './resources/compiled/timeline.css',
         './resources/compiled/swiper.css',
         './resources/compiled/portfolio.css',

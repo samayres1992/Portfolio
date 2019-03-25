@@ -2,6 +2,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.7.2",
     "bulma": "^0.7.4",
+    "bulma-tooltip": "^2.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.0.2",
     "gulp-update": "0.0.2",
