@@ -1,41 +1,4 @@
 $(document).ready(function() {
-  $(document).on('scroll', function() {
-    let nav = $("nav.navbar");
-    if($(this).scrollTop()>=$('#down-arrow').position().top){
-      nav.css("position", "fixed");
-      nav.addClass("white-nav");
-      nav.find(".is-active").removeClass("is-active");
-      nav.find(".work-link").parent().addClass("is-active");
-    } else {
-      if($(this).scrollTop() === 0) {
-        nav.css("position", "absolute");
-      }
-      nav.removeClass("white-nav");
-      nav.find(".is-active").removeClass("is-active");
-      nav.find(".welcome-link").parent().addClass("is-active");
-    }
-    
-    if($(this).scrollTop()>=$('#timeline').position().top) {
-      nav.find(".is-active").removeClass("is-active");
-      nav.find(".timeline-link").parent().addClass("is-active");
-    }
-  });
-
-  // Portfolio card
-  var swiper = new Swiper('.work-slider', {
-    spaceBetween: 30,
-    effect: 'fade',
-    loop: true,
-    mousewheel: {
-      invert: false,
-    },
-    // autoHeight: true,
-    pagination: {
-      el: '.blog-slider__pagination',
-      clickable: true,
-    }
-  });
-
   /* Particles */
   particlesJS(
     "welcome", {

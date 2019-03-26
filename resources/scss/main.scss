@@ -28,6 +28,7 @@ header.landing {
     width: 100%;
     background-color: transparent;
     z-index: 22;
+    padding: 1em;
     border-bottom-color: transparent;
     border-bottom-style: solid;
     border-bottom-width: 1px;
@@ -36,66 +37,27 @@ header.landing {
     -o-transition: background-color 1s ease-out;
     transition: background-color 1s ease-out;
 
-    .navbar-start {
-      li:first-of-type {
-        a {
-          padding-left: 0;
-        }
-      }
-    }
-
-    .navbar-end {
-      .navbar-item {
-        padding-right: 0;
-        &:last-of-type {
+    ul {
+      li {
+        display: inline-block;
+        &.is-active {
           a {
-            margin-left: 1em;
+            color: #3273dc;
           }
         }
-      }
-    }
-
-    ul {
-      border-bottom: none;
-
-      li {
         a {
-          padding: 1em;
           color: #fff;
-          font-size: 1em;
-
+          margin-right: 1em;
           &:hover {
-            border-bottom-color: #3273dc;
             color: #3273dc;
           }
         }
       }
-    }
-  }
-
-  .white-nav {
-    background-color: #fff;
-    -webkit-transition: background-color 1s ease-out;
-    -moz-transition: background-color 1s ease-out;
-    -o-transition: background-color 1s ease-out;
-    transition: background-color 1s ease-out;
-    -webkit-box-shadow: 0 3px 0 #d7e4ed;
-    box-shadow: 0 3px 0 #d7e4ed;
-
-    ul {
-      li {
-        a {
-          color: #4a4a4a;
-        }
-      }
-
-      li.is-active {
-        a {
-          color: #3273dc;
-        }
+      .contact {
+        margin-left: 1em;
       }
     }
-  }
+  } 
 }
 
 #welcome {
@@ -282,7 +244,7 @@ header.landing {
       background-color: #0747a6;
     }
     .litl-it {
-      background-color: #0747a6;
+      background-color: #3E88BA;
     }
     .locc-it {
       background-color: #fd746c;
@@ -320,11 +282,13 @@ header.landing {
 
   @-webkit-keyframes move {
     from {
-      -webkit-transform: translateX(-400px);
+      -webkit-transform: translateX(-200px);
+      -webkit-transform: translateX(calc(100vh - 200px));
     }
 
     to {
-      -webkit-transform: translateX(1350px);
+      -webkit-transform: translateX(1850px);
+      -webkit-transform: translateX(calc(100vh + 400px));
     }
   }
 }
@@ -1275,9 +1239,22 @@ footer.footer {
 }
 
 @media screen and (max-width: 1086px) {
-  header.landing {
-    nav {
-      position: relative !important;
+  #work {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .blog-card {
+    height: 400px;
+    .card-info {
+      display: none;
+    }
+    .bitbucket-wrapper {
+      padding: 2em;
+      top: 0;
+      svg {
+        font-size: 3em;
+      }
     }
   }
 

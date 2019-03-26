@@ -10,6 +10,18 @@
     color: #fff;
     padding: 1em 1em 0em 1em;
     font-size: 1.25rem; }
+  .blog-card .bitbucket-wrapper {
+    background-color: #2E87FB;
+    padding: 2.5em;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 1em; }
+    .blog-card .bitbucket-wrapper svg {
+      color: #fff;
+      font-size: 6em; }
+      .blog-card .bitbucket-wrapper svg:hover {
+        cursor: pointer; }
   .blog-card .color-overlay {
     width: 100%;
     height: 200px;
@@ -31,10 +43,12 @@
       font-size: 2em;
       margin: 0 0.25em;
       color: #fff; }
+      .blog-card .content-links a:hover {
+        color: #3273dc; }
   .blog-card.drupal-bitbucket:hover .color-overlay {
     background-color: #0747a6; }
   .blog-card.litl-it:hover .color-overlay {
-    background-color: #0747a6; }
+    background-color: #3E88BA; }
   .blog-card.locc-it:hover .color-overlay {
     background-color: #fd746c; }
   .blog-card.lucy-yin:hover .color-overlay {

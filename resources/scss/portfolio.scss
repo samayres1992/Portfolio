@@ -20,6 +20,22 @@ $txt-color:   #DCE3E7;
         font-size: 1.25rem;
     }
 
+    .bitbucket-wrapper {
+        background-color: #2E87FB;
+        padding: 2.5em;
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        top: 1em;
+        svg {
+            color: #fff;
+            font-size: 6em;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
     .color-overlay{
         width: $card-width;
         height: 200px;
@@ -44,6 +60,9 @@ $txt-color:   #DCE3E7;
             font-size: 2em;
             margin: 0 0.25em;
             color: #fff;
+            &:hover {
+                color: #3273dc;
+            }
         }
     }
 
@@ -55,7 +74,7 @@ $txt-color:   #DCE3E7;
 
     &.litl-it:hover {
         .color-overlay {
-            background-color: #0747a6;
+            background-color: #3E88BA;
         }
     }
     &.locc-it:hover {

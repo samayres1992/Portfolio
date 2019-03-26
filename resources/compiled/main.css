@@ -22,6 +22,7 @@ header.landing nav {
   width: 100%;
   background-color: transparent;
   z-index: 22;
+  padding: 1em;
   border-bottom-color: transparent;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -29,34 +30,17 @@ header.landing nav {
   -moz-transition: background-color 1s ease-out;
   -o-transition: background-color 1s ease-out;
   transition: background-color 1s ease-out; }
-  header.landing nav .navbar-start li:first-of-type a {
-    padding-left: 0; }
-  header.landing nav .navbar-end .navbar-item {
-    padding-right: 0; }
-    header.landing nav .navbar-end .navbar-item:last-of-type a {
-      margin-left: 1em; }
-  header.landing nav ul {
-    border-bottom: none; }
+  header.landing nav ul li {
+    display: inline-block; }
+    header.landing nav ul li.is-active a {
+      color: #3273dc; }
     header.landing nav ul li a {
-      padding: 1em;
       color: #fff;
-      font-size: 1em; }
+      margin-right: 1em; }
       header.landing nav ul li a:hover {
-        border-bottom-color: #3273dc;
         color: #3273dc; }
-
-header.landing .white-nav {
-  background-color: #fff;
-  -webkit-transition: background-color 1s ease-out;
-  -moz-transition: background-color 1s ease-out;
-  -o-transition: background-color 1s ease-out;
-  transition: background-color 1s ease-out;
-  -webkit-box-shadow: 0 3px 0 #d7e4ed;
-  box-shadow: 0 3px 0 #d7e4ed; }
-  header.landing .white-nav ul li a {
-    color: #4a4a4a; }
-  header.landing .white-nav ul li.is-active a {
-    color: #3273dc; }
+  header.landing nav ul .contact {
+    margin-left: 1em; }
 
 #welcome {
   width: 100%;
@@ -211,7 +195,7 @@ header.landing .white-nav {
     #work .show-off .drupal-bitbucket {
       background-color: #0747a6; }
     #work .show-off .litl-it {
-      background-color: #0747a6; }
+      background-color: #3E88BA; }
     #work .show-off .locc-it {
       background-color: #fd746c; }
     #work .show-off .lucy-yin {
@@ -239,9 +223,11 @@ header.landing .white-nav {
 
 @-webkit-keyframes move {
   from {
-    -webkit-transform: translateX(-400px); }
+    -webkit-transform: translateX(-200px);
+    -webkit-transform: translateX(calc(100vh - 200px)); }
   to {
-    -webkit-transform: translateX(1350px); } }
+    -webkit-transform: translateX(1850px);
+    -webkit-transform: translateX(calc(100vh + 400px)); } }
 
 #timeline {
   width: 100%;
@@ -994,8 +980,18 @@ footer.footer {
     margin: 0 0.25em; }
 
 @media screen and (max-width: 1086px) {
-  header.landing nav {
-    position: relative !important; }
+  #work {
+    padding-left: 2em;
+    padding-right: 2em; }
+  .blog-card {
+    height: 400px; }
+    .blog-card .card-info {
+      display: none; }
+    .blog-card .bitbucket-wrapper {
+      padding: 2em;
+      top: 0; }
+      .blog-card .bitbucket-wrapper svg {
+        font-size: 3em; }
   .cd-timeline__container {
     padding: 2em 1em !important; }
     .cd-timeline__container .pipe {

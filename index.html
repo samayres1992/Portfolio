@@ -9,26 +9,20 @@
 
 <body>
     <header class="landing">
-        <nav class="navbar tabs is-centered">
+        <nav class="is-centered">
             <ul class="container">
-                <div class="navbar-start">
-                    <li class="is-active">
-                        <a class="welcome-link" href="#welcome">Welcome</a>
-                    </li>
-                    <li>
-                        <a class="work-link" href="#work">Work</a>
-                    </li>
-                    <li>
-                        <a class="timeline-link" href="#timeline">Timeline</a>
-                    </li>
-                </div>
-                <div class="navbar-end">
-                    <div class="navbar-item">
-                        <div class="buttons">
-                            <a class="button is-info is-outlined" href="./resume">My Resum&#233;</a>
-                            <a class="button is-primary is-outlined" href="mailto:samayres1992@gmail.com">Contact Me</a>
-                        </div>
-                    </div>
+                <li class="is-active">
+                    <a class="welcome-link" href="#welcome">Welcome</a>
+                </li>
+                <li>
+                    <a class="work-link" href="#work">Work</a>
+                </li>
+                <li>
+                    <a class="timeline-link" href="#timeline">Timeline</a>
+                </li>
+                <div class="buttons is-pulled-right">
+                    <a class="button is-info is-outlined" href="./resume">My Resum&#233;</a>
+                    <a class="button is-primary is-outlined contact" href="mailto:samayres1992@gmail.com">Contact Me</a>
                 </div>
             </ul>
         </nav>
@@ -62,7 +56,7 @@
     </section>
     <section id="work">
         <div class="container show-off">
-            <div class="columns is-8">
+            <div class="columns">
                 <div class="column">
                     <div class="blog-card drupal-bitbucket">
                         <div class="title-content">
@@ -73,13 +67,15 @@
                         <div class="card-info">
                             A common issue I found in the working world is sometimes you need to share sensitive data, this tool I made allows you to do it safely.
                         </div>
-                        <img class="logo" src="images/bitbucket.png" />
+                        <div class="bitbucket-wrapper">
+                            <i class="fab fa-bitbucket bitbucket-card" aria-hidden="true"></i>
+                        </div>
                         <div class="content-links">
                             <a href="#">
                                 <i class="fas fa-link"></i>
                             </a>
                             <a href="#">
-                                <i class="fab fa-github-alt" aria-hidden="true"></i>
+                                <i class="fab fa-bitbucket" aria-hidden="true"></i>
                             </a>
                         </div>
                         <div class="utility-info">
@@ -103,10 +99,10 @@
                         </div>
                         <img class="logo" src="images/loccit-logo.png" />
                         <div class="content-links">
-                            <a href="https://locc.it">
+                            <a href="https://locc.it" target="_blank">
                                 <i class="fas fa-link"></i>
                             </a>
-                            <a href="https://github.com/samayres1992/locc.it">
+                            <a href="https://github.com/samayres1992/locc.it" target="_blank">
                                 <i class="fab fa-github-alt" aria-hidden="true"></i>
                             </a>
                         </div>
@@ -129,13 +125,13 @@
                         <div class="card-info">
                             A nifty sharing and bookmarking tool. It’s great for sharing resources between different social networks, without forgetting any of your links.
                         </div>
-                        <img class="logo" src="images/bitbucket.png" />
+                        <img class="logo" src="images/litlit-logo.png" />
                         <div class="content-links">
-                            <a href="https://github.com/samayres1992/litl.it-project">
+                            <a href="https://litl.it" target="_blank">
                                 <i class="fas fa-link"></i>
                             </a>
-                            <a href="https://litl.it">
-                                <i class="fab fa-github" aria-hidden="true"></i>
+                            <a href="https://github.com/samayres1992/litl.it-project" target="_blank">
+                                <i class="fab fa-github-alt" aria-hidden="true"></i>
                             </a>
                         </div>
                         <div class="utility-info">
@@ -159,10 +155,10 @@
                         </div>
                         <img class="logo" src="images/lucy-logo.png" />
                         <div class="content-links">
-                            <a href="https://lucy-yin.5am.dev">
+                            <a href="https://lucy-yin.5am.dev" target="_blank">
                                 <i class="fas fa-link"></i>
                             </a>
-                            <a href="https://github.com/samayres1992/lucy-yin">
+                            <a href="https://github.com/samayres1992/lucy-yin" target="_blank">
                                 <i class="fab fa-github-alt" aria-hidden="true"></i>
                             </a>
                         </div>
@@ -210,8 +206,7 @@
 
                     <div class="cd-timeline__content js-cd-content">
                         <h2 class="title">Graduated from the University of the West of England</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident
-                            rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+                        <p>When I began studying web design at university, it was my first big step towards being where I am today. I'm very proud to have achieved a bachelor's degree (2:1), that acted as a gateway in to a web programming career and I made many friends along the way.</p>
                         <span class="cd-timeline__date title">June, 2014</span>
                     </div>
                 </div>
@@ -240,17 +235,17 @@
                     </div>
                 </div>
 
-                <div class="cd-timeline__block js-cd-block">
+                <!-- <div class="cd-timeline__block js-cd-block">
                     <div class="cd-timeline__img cd-timeline__img--location js-cd-img travel">
                         <i class="fas fa-plane"></i>
                     </div>
 
                     <div class="cd-timeline__content js-cd-content">
                         <h2 class="title">Moved to New York</h2>
-                        <p>Moving across the globe to </p>
+                        <p>Moving across the globe to be with my significant other has been challenging, but worth it. The sacrifice of having to leave my previous job position was inevitable, I now will pursue future career options after receiving work authorization and studying web development until then.</p>
                         <span class="cd-timeline__date title">July, 2019</span>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="cd-timeline__block js-cd-block">
                     <div class="cd-timeline__img is-primary js-cd-img question">
@@ -266,7 +261,7 @@
                             </span>
                             <span>Email Me</span>
                         </a>
-                        <span class="cd-timeline__date title">January, 2020</span>
+                        <span class="cd-timeline__date title">Current</span>
                     </div>
                 </div>
             </div>
