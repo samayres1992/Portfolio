@@ -10,21 +10,6 @@
     color: #fff;
     padding: 1em 1em 0em 1em;
     font-size: 3em; }
-  .blog-card .bitbucket-wrapper {
-    background-color: #2E87FB;
-    padding-top: 2.2em;
-    border-radius: 50%;
-    display: inline-block;
-    position: absolute;
-    bottom: 148px;
-    left: 39%;
-    width: 22%;
-    height: 26%; }
-    .blog-card .bitbucket-wrapper svg {
-      color: #fff;
-      font-size: 4em; }
-      .blog-card .bitbucket-wrapper svg:hover {
-        cursor: pointer; }
   .blog-card .content-links {
     position: absolute;
     width: 100%;
@@ -35,17 +20,6 @@
       color: #fff; }
       .blog-card .content-links a:hover {
         color: #3273dc; }
-  .blog-card.drupal-bitbucket:hover .color-overlay {
-    background-color: #0747a6; }
-  .blog-card.litl-it:hover .color-overlay {
-    background-color: #3E88BA; }
-  .blog-card.locc-it:hover .color-overlay {
-    background-color: #fd746c; }
-  .blog-card.lucy-yin:hover .color-overlay {
-    background-color: #36465d; }
-  .blog-card:hover .card-info {
-    opacity: 1;
-    bottom: 120px; }
 
 .title-content {
   text-align: center;
