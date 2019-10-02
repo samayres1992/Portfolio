@@ -1809,7 +1809,8 @@ a.box:active {
     .button.is-primary.is-outlined {
       background-color: transparent;
       border-color: #00d1b2;
-      color: #00d1b2; }
+      color: #00d1b2;
+      font-size: 1.15em; }
       .button.is-primary.is-outlined:hover, .button.is-primary.is-outlined:focus {
         background-color: #00d1b2;
         border-color: #00d1b2;
@@ -1937,7 +1938,8 @@ a.box:active {
     .button.is-info.is-outlined {
       background-color: transparent;
       border-color: #209cee;
-      color: #209cee; }
+      color: #209cee;
+      font-size: 1.15em; }
       .button.is-info.is-outlined:hover, .button.is-info.is-outlined:focus {
         background-color: #209cee;
         border-color: #209cee;
@@ -8985,7 +8987,7 @@ button.swiper-pagination-bullet {
 
 .blog-card {
   width: 100%;
-  height: 500px;
+  height: 525px;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
@@ -8994,38 +8996,25 @@ button.swiper-pagination-bullet {
   .blog-card h2 {
     color: #fff;
     padding: 1em 1em 0em 1em;
-    font-size: 1.25rem; }
+    font-size: 3em; }
   .blog-card .bitbucket-wrapper {
     background-color: #2E87FB;
-    padding: 2.5em;
+    padding: 1.5em;
     border-radius: 50%;
     display: inline-block;
     position: relative;
-    top: 1em; }
+    top: 0.5em; }
     .blog-card .bitbucket-wrapper svg {
       color: #fff;
-      font-size: 6em; }
+      font-size: 2em; }
       .blog-card .bitbucket-wrapper svg:hover {
         cursor: pointer; }
-  .blog-card .color-overlay {
-    width: 100%;
-    height: 200px;
-    z-index: 10;
-    transition: background 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
-    position: absolute;
-    top: 150px; }
-  .blog-card .gradient-overlay {
-    width: 100%;
-    height: 200px;
-    z-index: 15;
-    position: absolute;
-    top: 150px; }
   .blog-card .content-links {
     position: absolute;
     width: 100%;
-    bottom: 60px; }
+    bottom: 65px; }
     .blog-card .content-links a {
-      font-size: 2em;
+      font-size: 3em;
       margin: 0 0.25em;
       color: #fff; }
       .blog-card .content-links a:hover {
@@ -9046,7 +9035,7 @@ button.swiper-pagination-bullet {
   text-align: center;
   z-index: 20;
   width: 100%;
-  padding-bottom: 20px; }
+  padding-bottom: 5px; }
 
 h3 {
   font-size: 20px;
@@ -9063,10 +9052,11 @@ hr {
   background: #fff; }
 
 .intro {
-  width: 170px;
+  width: 75%;
+  height: 60px;
   margin: 0 auto;
   color: #DCE3E7;
-  font-size: 14px;
+  font-size: 1em;
   line-height: 18px; }
 
 .card-info {
@@ -9081,7 +9071,7 @@ hr {
   z-index: 20;
   opacity: 0;
   transition: bottom 0.3s, opacity 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
-  font-size: 14px; }
+  font-size: 1em; }
 
 .utility-info {
   position: absolute;
@@ -9102,7 +9092,8 @@ hr {
     color: #DCE3E7; }
     .utility-list li.date {
       background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 5px; }
+      border-radius: 5px;
+      font-size: 1.25em; }
 
 html {
   scroll-behavior: smooth; }
@@ -9142,7 +9133,11 @@ header.landing nav {
       color: #3273dc; }
     header.landing nav ul li a {
       color: #fff;
-      margin-right: 1em; }
+      margin-right: 1em;
+      font-size: 1.5em; }
+      header.landing nav ul li a.is-outlined {
+        font-size: 1.15em;
+      }
       header.landing nav ul li a:hover {
         color: #3273dc; }
   header.landing nav ul .contact {
@@ -9166,7 +9161,7 @@ header.landing nav {
     z-index: 999;
     color: white;
     bottom: 0;
-    font-size: 50px;
+    font-size: 80px;
     color: #3273dc;
     opacity: 0.35; }
 
@@ -9286,7 +9281,7 @@ header.landing nav {
 
 #work {
   width: 100%;
-  height: 40em;
+  height: 80em;
   position: relative;
   background: #326fc0;
   background-image: linear-gradient(to bottom, #0f022e, #1a1e4f, #273773, #2f5299, #326fc0);
@@ -9297,7 +9292,9 @@ header.landing nav {
   #work .show-off {
     z-index: 10; }
     #work .show-off img {
-      width: 65%; }
+      width: 20%;
+      position: relative;
+      top: 20px; }
     #work .show-off .drupal-bitbucket {
       background-color: #0747a6; }
     #work .show-off .litl-it {
@@ -9312,7 +9309,7 @@ header.landing nav {
     position: absolute;
     z-index: 2; }
   #work .cloud-1 {
-    bottom: -70px;
+    bottom: -75px;
     fill: #eee;
     /* Animation shorthand syntax order: name, duration, timing-function, delay, iteration-count, direction, fill-mode */
     -webkit-animation: move 20s linear infinite;
@@ -10095,11 +10092,10 @@ footer.footer {
     padding-left: 2em;
     padding-right: 2em; }
   .blog-card {
-    height: 400px; }
+    height: 525px; }
     .blog-card .card-info {
       display: none; }
     .blog-card .bitbucket-wrapper {
-      padding: 2em;
       top: 0; }
       .blog-card .bitbucket-wrapper svg {
         font-size: 3em; }
