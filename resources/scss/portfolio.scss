@@ -20,25 +20,6 @@ $txt-color:   #DCE3E7;
         font-size: 3em; 
     }
 
-    .bitbucket-wrapper {
-        background-color: #2E87FB;
-        padding-top: 2.2em;
-        border-radius: 50%;
-        display: inline-block;
-        position: absolute;
-        bottom: 148px;
-        left: 39%;
-        width: 22%;
-        height: 26%;
-        svg {
-            color: #fff;
-            font-size: 4em;
-            &:hover {
-                cursor: pointer;
-            }
-        }
-    }
-
     .content-links {
         position: absolute;
         width: 100%;
@@ -50,35 +31,6 @@ $txt-color:   #DCE3E7;
             &:hover {
                 color: #3273dc;
             }
-        }
-    }
-
-    &.drupal-bitbucket:hover {
-        .color-overlay{
-            background-color: #0747a6;
-        }
-    }
-
-    &.litl-it:hover {
-        .color-overlay {
-            background-color: #3E88BA;
-        }
-    }
-    &.locc-it:hover {
-        .color-overlay {
-            background-color: #fd746c;
-        }
-    }
-    &.lucy-yin:hover {
-        .color-overlay {
-            background-color: #36465d;
-        }
-    }
-    
-    &:hover{ 
-        .card-info{
-            opacity: 1;
-            bottom: 120px;
         }
     }
 }
