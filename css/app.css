@@ -9001,14 +9001,14 @@ button.swiper-pagination-bullet {
     font-size: 3em; }
   .blog-card .bitbucket-wrapper {
     background-color: #2E87FB;
-    padding-top: 1.5em;
+    padding-top: 2.2em;
     border-radius: 50%;
     display: inline-block;
     position: absolute;
     bottom: 148px;
-    left: 38%;
-    width: 24%;
-    height: 20%; }
+    left: 39%;
+    width: 22%;
+    height: 26%; }
     .blog-card .bitbucket-wrapper svg {
       color: #fff;
       font-size: 4em; }
@@ -9296,7 +9296,7 @@ header.landing nav {
     #work .show-off img {
       width: 24%;
       position: absolute;
-      bottom: 150px;
+      bottom: 130px;
       left: 38%; }
     #work .show-off .drupal-bitbucket {
       background-color: #0747a6; }
