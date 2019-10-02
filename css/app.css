@@ -1809,8 +1809,7 @@ a.box:active {
     .button.is-primary.is-outlined {
       background-color: transparent;
       border-color: #00d1b2;
-      color: #00d1b2;
-      font-size: 1.15em; }
+      color: #00d1b2; }
       .button.is-primary.is-outlined:hover, .button.is-primary.is-outlined:focus {
         background-color: #00d1b2;
         border-color: #00d1b2;
@@ -1938,8 +1937,7 @@ a.box:active {
     .button.is-info.is-outlined {
       background-color: transparent;
       border-color: #209cee;
-      color: #209cee;
-      font-size: 1.15em; }
+      color: #209cee; }
       .button.is-info.is-outlined:hover, .button.is-info.is-outlined:focus {
         background-color: #209cee;
         border-color: #209cee;
@@ -8999,14 +8997,17 @@ button.swiper-pagination-bullet {
     font-size: 3em; }
   .blog-card .bitbucket-wrapper {
     background-color: #2E87FB;
-    padding: 1.5em;
+    padding-top: 1.5em;
     border-radius: 50%;
     display: inline-block;
-    position: relative;
-    top: 0.5em; }
+    position: absolute;
+    bottom: 148px;
+    left: 38%;
+    width: 24%;
+    height: 20%; }
     .blog-card .bitbucket-wrapper svg {
       color: #fff;
-      font-size: 2em; }
+      font-size: 4em; }
       .blog-card .bitbucket-wrapper svg:hover {
         cursor: pointer; }
   .blog-card .content-links {
@@ -9135,9 +9136,6 @@ header.landing nav {
       color: #fff;
       margin-right: 1em;
       font-size: 1.5em; }
-      header.landing nav ul li a.is-outlined {
-        font-size: 1.15em;
-      }
       header.landing nav ul li a:hover {
         color: #3273dc; }
   header.landing nav ul .contact {
@@ -9292,9 +9290,10 @@ header.landing nav {
   #work .show-off {
     z-index: 10; }
     #work .show-off img {
-      width: 20%;
-      position: relative;
-      top: 20px; }
+      width: 24%;
+      position: absolute;
+      bottom: 150px;
+      left: 38%; }
     #work .show-off .drupal-bitbucket {
       background-color: #0747a6; }
     #work .show-off .litl-it {
@@ -10086,22 +10085,20 @@ footer.footer {
   header.landing nav {
     padding-left: 2em;
     padding-right: 2em; }
+    header.landing nav ul li a {
+      font-size: 2.5em; }
+    header.landing nav a.is-outlined {
+      font-size: 1.5em; }
   #welcome .plug {
     left: 2em; }
   #work {
     padding-left: 2em;
     padding-right: 2em; }
-  .blog-card {
-    height: 525px; }
-    .blog-card .card-info {
-      display: none; }
-    .blog-card .bitbucket-wrapper {
-      top: 0; }
-      .blog-card .bitbucket-wrapper svg {
-        font-size: 3em; }
   .cd-timeline__container {
     padding: 2em 1em !important; }
     .cd-timeline__container .pipe {
       left: 3em; }
   .cd-timeline__img svg {
-    font-size: 1.5em; } }
+    font-size: 1.5em; }
+  footer.footer a {
+    font-size: 3em; } }

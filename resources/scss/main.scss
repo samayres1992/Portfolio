@@ -36,7 +36,6 @@ header.landing {
     -moz-transition: background-color 1s ease-out;
     -o-transition: background-color 1s ease-out;
     transition: background-color 1s ease-out;
-
     ul {
       li {
         display: inline-block;
@@ -52,9 +51,6 @@ header.landing {
           &:hover {
             color: #3273dc;
           }
-        }
-        a.is-outlined {
-          font-size: 1.15em;
         }
       }
       .contact {
@@ -242,9 +238,10 @@ header.landing {
   .show-off {
     z-index: 10;
     img {
-      width: 20%;
-      position: relative;
-      top: 20px;
+      width: 24%;
+      position: absolute;
+      bottom: 150px;
+      left: 38%;
     }
     .drupal-bitbucket {
       background-color: #0747a6;
@@ -1253,9 +1250,12 @@ footer.footer {
       ul {
         li {
           a {
-            font-size: 3em;
+            font-size: 2.5em;
           }
         }
+      }
+      a.is-outlined {
+        font-size: 1.5em;
       }
     }
   }
@@ -1269,20 +1269,6 @@ footer.footer {
   #work {
     padding-left: 2em;
     padding-right: 2em;
-  }
-
-  .blog-card {
-    height: 525px;
-    .card-info {
-      display: none;
-    }
-    .bitbucket-wrapper {
-      padding: 1.5em;
-      top: 0;
-      svg {
-        font-size: 2em;
-      }
-    }
   }
 
   .cd-timeline__container {
