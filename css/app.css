@@ -8277,6 +8277,9 @@ label.panel-block {
   box-shadow: 0 3px 0 #d7e4ed;
   padding: 2em 1em; }
 
+.cd-timeline__content a {
+  font-size: 1.5em; }
+
 .cd-timeline__content:after {
   /* clearfix */
   content: "";
@@ -8299,7 +8302,8 @@ label.panel-block {
 
 .cd-timeline__content p {
   margin: 1em 0;
-  line-height: 1.6; }
+  line-height: 1.6;
+  font-size: 1.4em; }
 
 .cd-timeline__read-more,
 .cd-timeline__date {
@@ -9057,8 +9061,8 @@ hr {
   height: 60px;
   margin: 0 auto;
   color: #DCE3E7;
-  font-size: 1em;
-  line-height: 18px; }
+  font-size: 1.4em;
+  line-height: 22px; }
 
 .card-info {
   width: 100%;
@@ -10100,5 +10104,5 @@ footer.footer {
       left: 3em; }
   .cd-timeline__img svg {
     font-size: 1.5em; }
-  footer.footer a {
-    font-size: 3em; } }
+  footer.footer {
+    font-size: 2em; } }
