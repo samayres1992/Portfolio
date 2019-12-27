@@ -202,20 +202,17 @@ header.landing nav {
   #work .show-off {
     z-index: 10; }
     #work .show-off img {
-      width: 15%;
       position: absolute;
-      bottom: 130px;
-      left: 42.5%; }
+      width: 70px;
+      bottom: 135px;
+      left: 45%;
+      left: calc(50% - 35px); }
     #work .show-off .drupal-bitbucket {
       background-color: #0747a6; }
     #work .show-off .litl-it {
       background-color: #3E88BA; }
     #work .show-off .locc-it {
       background-color: #4b6cb7; }
-      #work .show-off .locc-it img {
-        width: 8%;
-        bottom: 135px;
-        left: 46%; }
     #work .show-off .lucy-yin {
       background-color: #36465d; }
     #work .show-off .treorchy {

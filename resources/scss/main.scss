@@ -253,10 +253,11 @@ header.landing {
   .show-off {
     z-index: 10;
     img {
-      width: 15%;
       position: absolute;
-      bottom: 130px;
-      left: 42.5%;
+      width: 70px;
+      bottom: 135px;
+      left: 45%;
+      left: calc(50% - 35px);
     }
     .drupal-bitbucket {
       background-color: #0747a6;
@@ -266,11 +267,6 @@ header.landing {
     }
     .locc-it {
       background-color: #4b6cb7;
-      img {
-        width: 8%;
-        bottom: 135px;
-        left: 46%;
-      }
     }
     .lucy-yin {
       background-color: #36465d;
