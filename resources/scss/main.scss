@@ -8,6 +8,21 @@ html {
   }
 }
 
+@media screen and (max-width: 960px) {
+  .landing {
+    .left {
+      display: block;
+      text-align: center;
+    }
+    .is-pulled-right {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-top: 25px;
+    }
+  }
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -226,7 +241,7 @@ header.landing {
 
 #work {
   width: 100%;
-  height: 80em;
+  padding-bottom: 2em;
   position: relative;
   background: #326fc0;
   background-image: linear-gradient(to bottom, #0f022e, #1a1e4f, #273773, #2f5299, #326fc0);
@@ -238,10 +253,10 @@ header.landing {
   .show-off {
     z-index: 10;
     img {
-      width: 24%;
+      width: 15%;
       position: absolute;
       bottom: 130px;
-      left: 38%;
+      left: 42.5%;
     }
     .drupal-bitbucket {
       background-color: #0747a6;
@@ -250,10 +265,25 @@ header.landing {
       background-color: #3E88BA;
     }
     .locc-it {
-      background-color: #fd746c;
+      background-color: #4b6cb7;
     }
     .lucy-yin {
       background-color: #36465d;
+    }
+    .treorchy {
+      background-color: #eb008b;
+    }
+    .kelso {
+      background-color: #543F99;
+    }
+    .tags {
+      text-align: center;
+      display: block;
+      .tag {
+        background: rgba(255,255,255,0.25);
+        color: #fff;
+        padding: 15px;
+      }
     }
   }
 

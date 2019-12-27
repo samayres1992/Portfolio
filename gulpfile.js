@@ -49,10 +49,4 @@ gulp.task('js', function () {
     .pipe(gulp.dest('./js/'));
 });
 
-gulp.task('update', function update () {
-    gulp.watch('./package.json').on('change', function (file) {
-        update.write(file);
-    });
-});
-
-gulp.task('default', gulp.series('compile-css', 'css', 'js', 'update'));
+gulp.task('default', gulp.series('compile-css', 'css', 'js'));

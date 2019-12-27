@@ -9,7 +9,8 @@
   .blog-card h2 {
     color: #fff;
     padding: 1em 1em 0em 1em;
-    font-size: 3em; }
+    font-size: 3em;
+    height: 3em; }
   .blog-card .content-links {
     position: absolute;
     width: 100%;
@@ -35,15 +36,15 @@ h3 {
   margin-bottom: 0; }
 
 hr {
-  width: 50px;
-  height: 3px;
+  width: 50%;
+  height: 2px;
   margin: 20px auto;
   border: 0;
   background: #fff; }
 
 .intro {
   width: 75%;
-  height: 60px;
+  height: 85px;
   margin: 0 auto;
   color: #DCE3E7;
   font-size: 1.4em;

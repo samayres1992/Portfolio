@@ -8998,7 +8998,8 @@ button.swiper-pagination-bullet {
   .blog-card h2 {
     color: #fff;
     padding: 1em 1em 0em 1em;
-    font-size: 3em; }
+    font-size: 3em;
+    height: 3em; }
   .blog-card .content-links {
     position: absolute;
     width: 100%;
@@ -9024,15 +9025,15 @@ h3 {
   margin-bottom: 0; }
 
 hr {
-  width: 50px;
-  height: 3px;
+  width: 50%;
+  height: 2px;
   margin: 20px auto;
   border: 0;
   background: #fff; }
 
 .intro {
   width: 75%;
-  height: 60px;
+  height: 85px;
   margin: 0 auto;
   color: #DCE3E7;
   font-size: 1.4em;
@@ -9080,6 +9081,16 @@ html {
 @media screen and (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto; } }
+
+@media screen and (max-width: 960px) {
+  .landing .left {
+    display: block;
+    text-align: center; }
+  .landing .is-pulled-right {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 25px; } }
 
 body {
   width: 100%;
@@ -9257,7 +9268,7 @@ header.landing nav {
 
 #work {
   width: 100%;
-  height: 80em;
+  padding-bottom: 2em;
   position: relative;
   background: #326fc0;
   background-image: linear-gradient(to bottom, #0f022e, #1a1e4f, #273773, #2f5299, #326fc0);
@@ -9268,18 +9279,29 @@ header.landing nav {
   #work .show-off {
     z-index: 10; }
     #work .show-off img {
-      width: 24%;
+      width: 15%;
       position: absolute;
       bottom: 130px;
-      left: 38%; }
+      left: 42.5%; }
     #work .show-off .drupal-bitbucket {
       background-color: #0747a6; }
     #work .show-off .litl-it {
       background-color: #3E88BA; }
     #work .show-off .locc-it {
-      background-color: #fd746c; }
+      background-color: #4b6cb7; }
     #work .show-off .lucy-yin {
       background-color: #36465d; }
+    #work .show-off .treorchy {
+      background-color: #eb008b; }
+    #work .show-off .kelso {
+      background-color: #543F99; }
+    #work .show-off .tags {
+      text-align: center;
+      display: block; }
+      #work .show-off .tags .tag {
+        background: rgba(255, 255, 255, 0.25);
+        color: #fff;
+        padding: 15px; }
   #work .clouds {
     width: 200x;
     height: 300px;
