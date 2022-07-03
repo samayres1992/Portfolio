@@ -10103,3 +10103,9 @@ footer.footer {
     font-size: 1.5em; }
   footer.footer {
     font-size: 2em; } }
+    ul.culthealth {
+      line-height: 1.4;
+      font-size: 1.4em;
+      padding-left: 1em;
+      list-style: unset;
+    }
