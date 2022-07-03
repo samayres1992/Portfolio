@@ -1,5 +1,4 @@
 var gulp = require('gulp');
-var update = require('gulp-update')();
 var scss = require('gulp-sass');
 var concat = require('gulp-concat');
 
