@@ -1,3 +1,8 @@
 node_modules
 package-lock.json
 lucy-yin
+resume/node_modules
+resume/.DS_Store
+resume/dist
+resume/dist-ssr
+resume/*.local
