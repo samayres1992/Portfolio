@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var scss = require('gulp-sass');
+const scss = require('gulp-sass')(require('sass'));
 var concat = require('gulp-concat');
 
 gulp.task('compile-css', function () {
@@ -8,7 +8,6 @@ gulp.task('compile-css', function () {
         './node_modules/bulma/bulma.sass',
         './node_modules/bulma-tooltip/dist/css/bulma-tooltip.min.css',
         './resources/scss/timeline.scss',
-        './resources/scss/swiper.scss',
         './resources/scss/portfolio.scss',
         './resources/scss/main.scss',
     ])
@@ -22,7 +21,6 @@ gulp.task('css', function () {
         './resources/compiled/bulma.css',
         './resources/compiled/bulma-tooltip.min.css',
         './resources/compiled/timeline.css',
-        './resources/compiled/swiper.css',
         './resources/compiled/portfolio.css',
         './resources/compiled/main.css',
     ])

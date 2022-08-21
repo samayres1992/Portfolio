@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans:wght@700;800&display=swap');
 html {
   scroll-behavior: smooth;
+  min-height: 100%;
+  min-width: 100%;
 }
 
 html, body {
@@ -13,13 +15,13 @@ h1, h2, h3, h4, a, nav li, .tags span, .date, .cd-timeline__date  {
 }
 
 
-@media screen and (prefers-reduced-motion: reduce) {
+@media only screen and (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
 }
 
-@media screen and (max-width: 960px) {
+@media only screen and (max-width: 960px) {
   .landing {
     .left {
       display: block;
@@ -77,6 +79,16 @@ header.landing {
           }
         }
       }
+      .left {
+        @media only screen and (max-width: 1087px) {
+          display: none;
+        }
+      }
+      a.button {
+        @media only screen and (max-width: 1087px) {
+          font-size: 1em;
+        }
+      }
       .contact {
         margin-left: 1em;
       }
@@ -88,13 +100,13 @@ header.landing {
   width: 100%;
   height: 500px;
   background-color: #0f022e;
-  overflow: hidden;
+  overflow-x: hidden;
   z-index: 1;
-  height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  padding-bottom: 2em;
 
   .landing-down {
     position: absolute;
@@ -102,16 +114,20 @@ header.landing {
     left: calc(50% - 25px);
     z-index: 999;
     color: white;
-    bottom: 0;
+    bottom: 0px;
     font-size: 80px;
     color: #3273dc;
     opacity: 0.35;
+    @media only screen and (max-width: 1087px) {
+      width: 50px;
+    }
   }
 }
 
 .plug {
   position: absolute;
-  bottom: 5em;
+  bottom: 6em;
+  z-index: 10;
 
   h1,
   h2,
@@ -121,10 +137,16 @@ header.landing {
 
   h1 {
     font-size: 5em;
+    @media only screen and (max-width: 1024px) {
+      font-size: 3em;
+    }
   }
 
   h2 {
     font-size: 3em;
+    @media only screen and (max-width: 1024px) {
+      font-size: 2em;
+    }
   }
 
   h3 {
@@ -146,6 +168,7 @@ header.landing {
   box-shadow: 0px 0px 4px 10px rgba(139, 49, 169, 0.52), 0px 0px 4px 20px rgba(63, 167, 143, 0.22);
   z-index: 1;
   animation: float infinite 10s ease-in-out alternate;
+  z-index: 8;
 }
 
 @keyframes float {
@@ -256,17 +279,13 @@ header.landing {
   background-image: linear-gradient(to bottom, #0f022e, #1a1e4f, #273773, #2f5299, #326fc0);
   overflow: hidden;
   position: relative;
-  padding-top: 5em;
-  padding-top: 8.4vh;
+  padding-top: 2em;
+  padding-bottom: 3em;
 
   .show-off {
     z-index: 10;
     img {
-      position: absolute;
-      width: 70px;
-      bottom: 135px;
-      left: 45%;
-      left: calc(50% - 35px);
+      display: none;
     }
     .drupal-bitbucket {
       background-color: #0747a6;
@@ -276,12 +295,27 @@ header.landing {
     }
     .locc-it {
       background-color: #4b6cb7;
+      @media only screen and (max-width: 1087px) {
+        .intro {
+             height: 65px;
+        }
+      }
     }
     .lucy-yin {
       background-color: #36465d;
+      @media only screen and (max-width: 1087px) {
+        .intro {
+             height: 65px;
+        }
+      }
     }
     .treorchy {
       background-color: #d16a88;
+      @media only screen and (max-width: 1087px) {
+        .intro {
+             height: 65px;
+        }
+      }
     }
     .tags {
       text-align: center;
@@ -340,7 +374,7 @@ header.landing {
   top: 0;
   left: 0;
   background: linear-gradient(to bottom, #326fc0 0%, #eb9291 60%, #eb7 100%);
-
+  overflow-x: hidden;
   .clouds {
     width: 200x;
     height: 300px;
@@ -1288,12 +1322,13 @@ footer.footer {
   }
 }
 
-@media screen and (max-width: 1087px) {
+@media only screen and (max-width: 1024px) {
 
   header.landing {
     nav {
       padding-left: 2em;
       padding-right: 2em;
+      text-align: center;
       ul {
         li {
           a {
@@ -1320,9 +1355,6 @@ footer.footer {
 
   .cd-timeline__container {
     padding: 2em 1em !important;
-    .pipe {
-      left: 3em;
-    }
   }
 
   .cd-timeline__img {
@@ -1332,6 +1364,6 @@ footer.footer {
   }
 
   footer.footer {
-    font-size: 2em;
+    font-size: 1em;
   }
 }

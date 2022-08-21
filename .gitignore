@@ -6,3 +6,6 @@ resume/.DS_Store
 resume/dist
 resume/dist-ssr
 resume/*.local
+css
+js
+resources/compiled
