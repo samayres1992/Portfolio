@@ -11,6 +11,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-update": "0.0.2",
     "jquery": "^3.3.1",
+    "latest": "^0.2.0",
     "normalize.css": "^8.0.1",
     "particlesjs": "^2.0.0"
   },
@@ -23,7 +24,7 @@
     "postcss": "^8.2.13",
     "push-dir": "^0.4.1",
     "sass": "^1.53.0",
-    "tailwindcss": "^2.1.2",
+    "tailwindcss": "^2.2.19",
     "vite": "^2.2.3"
   }
 }

@@ -7,25 +7,41 @@ gulp.task('compile-css', function () {
         './node_modules/normalize.css/normalize.css',
         './node_modules/bulma/bulma.sass',
         './node_modules/bulma-tooltip/dist/css/bulma-tooltip.min.css',
+        './resources/scss/tailwind.scss',
         './resources/scss/timeline.scss',
         './resources/scss/portfolio.scss',
+        './resources/scss/svg.scss',
+        './resources/scss/resume.scss',
         './resources/scss/main.scss',
     ])
     .pipe(scss())
     .pipe(gulp.dest('./resources/compiled'));
 });
 
-gulp.task('css', function () {
+gulp.task('css-portfolio', function () {
     return gulp.src([
         './resources/compiled/normalize.css',
         './resources/compiled/bulma.css',
         './resources/compiled/bulma-tooltip.min.css',
-        './resources/compiled/timeline.css',
+        './resources/compiled/svg.css',
         './resources/compiled/portfolio.css',
+        './resources/compiled/timeline.css',
         './resources/compiled/main.css',
     ])
     .pipe(concat(
         'app.css'
+    ))
+    .pipe(gulp.dest('./css/'));
+});
+
+gulp.task('css-resume', function () {
+    return gulp.src([
+        './resources/compiled/tailwind.css',
+        './resources/compiled/svg.css',
+        './resources/compiled/resume.css',
+    ])
+    .pipe(concat(
+        'resume.css'
     ))
     .pipe(gulp.dest('./css/'));
 });
@@ -46,4 +62,4 @@ gulp.task('js', function () {
     .pipe(gulp.dest('./js/'));
 });
 
-gulp.task('default', gulp.series('compile-css', 'css', 'js'));
+gulp.task('default', gulp.series('compile-css', 'css-portfolio', 'css-resume', 'js'));

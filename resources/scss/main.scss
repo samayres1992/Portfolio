@@ -296,26 +296,23 @@ header.landing {
     .locc-it {
       background-color: #4b6cb7;
       @media only screen and (max-width: 1087px) {
+        height: 450px;
         .intro {
-             height: 65px;
+            height: 75px;
         }
       }
     }
     .lucy-yin {
       background-color: #36465d;
       @media only screen and (max-width: 1087px) {
+        height: 450px;
         .intro {
-             height: 65px;
+             height: 75px;
         }
       }
     }
     .treorchy {
       background-color: #d16a88;
-      @media only screen and (max-width: 1087px) {
-        .intro {
-             height: 65px;
-        }
-      }
     }
     .tags {
       text-align: center;
@@ -460,6 +457,9 @@ header.landing {
       .bird-1 {
         position: absolute;
         left: 17%;
+        @media only screen and (max-width: 900px) {
+          left: 6%;
+        }
         bottom: 0px;
 
         .head {
@@ -559,6 +559,9 @@ header.landing {
       .bird-2 {
         position: absolute;
         left: 27%;
+        @media only screen and (max-width: 900px) {
+          left: 18%;
+        }
         bottom: 0px;
 
         .head {
@@ -663,6 +666,9 @@ header.landing {
       .bird-3 {
         position: absolute;
         left: 33%;
+        @media only screen and (max-width: 900px) {
+          left: 31%;
+        }
         bottom: 0px;
 
         .head {
@@ -1081,6 +1087,9 @@ header.landing {
         position: absolute;
         left: 68%;
         bottom: 0px;
+        @media only screen and (max-width: 900px) {
+          display: none;
+        }
 
         .head {
           position: absolute;

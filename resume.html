@@ -1,318 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Nunito:wght@700&display=swap" rel="stylesheet"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style type="text/css">svg:not(:root).svg-inline--fa{overflow:visible}.svg-inline--fa{display:inline-block;font-size:inherit;height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-lg{vertical-align:-.225em}.svg-inline--fa.fa-w-1{width:.0625em}.svg-inline--fa.fa-w-2{width:.125em}.svg-inline--fa.fa-w-3{width:.1875em}.svg-inline--fa.fa-w-4{width:.25em}.svg-inline--fa.fa-w-5{width:.3125em}.svg-inline--fa.fa-w-6{width:.375em}.svg-inline--fa.fa-w-7{width:.4375em}.svg-inline--fa.fa-w-8{width:.5em}.svg-inline--fa.fa-w-9{width:.5625em}.svg-inline--fa.fa-w-10{width:.625em}.svg-inline--fa.fa-w-11{width:.6875em}.svg-inline--fa.fa-w-12{width:.75em}.svg-inline--fa.fa-w-13{width:.8125em}.svg-inline--fa.fa-w-14{width:.875em}.svg-inline--fa.fa-w-15{width:.9375em}.svg-inline--fa.fa-w-16{width:1em}.svg-inline--fa.fa-w-17{width:1.0625em}.svg-inline--fa.fa-w-18{width:1.125em}.svg-inline--fa.fa-w-19{width:1.1875em}.svg-inline--fa.fa-w-20{width:1.25em}.svg-inline--fa.fa-pull-left{margin-right:.3em;width:auto}.svg-inline--fa.fa-pull-right{margin-left:.3em;width:auto}.svg-inline--fa.fa-border{height:1.5em}.svg-inline--fa.fa-li{width:2em}.svg-inline--fa.fa-fw{width:1.25em}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:#ff253a;border-radius:1em;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff;height:1.5em;line-height:1;max-width:5em;min-width:1.5em;overflow:hidden;padding:.25em;right:0;text-overflow:ellipsis;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:0;right:0;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:0;left:0;right:auto;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{right:0;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:0;right:auto;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top left;transform-origin:top left}.fa-lg{font-size:1.3333333333em;line-height:.75em;vertical-align:-.0667em}.fa-xs{font-size:.75em}.fa-sm{font-size:.875em}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:2.5em;padding-left:0}.fa-ul>li{position:relative}.fa-li{left:-2em;position:absolute;text-align:center;width:2em;line-height:inherit}.fa-border{border:solid .08em #eee;border-radius:.1em;padding:.2em .25em .15em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left,.fab.fa-pull-left,.fal.fa-pull-left,.far.fa-pull-left,.fas.fa-pull-left{margin-right:.3em}.fa.fa-pull-right,.fab.fa-pull-right,.fal.fa-pull-right,.far.fa-pull-right,.fas.fa-pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-both,.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}:root .fa-flip-both,:root .fa-flip-horizontal,:root .fa-flip-vertical,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-rotate-90{-webkit-filter:none;filter:none}.fa-stack{display:inline-block;height:2em;position:relative;width:2.5em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.svg-inline--fa.fa-stack-1x{height:1em;width:1.25em}.svg-inline--fa.fa-stack-2x{height:2em;width:2.5em}.fa-inverse{color:#fff}.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}</style>
-    <link rel="stylesheet" href="./css/resume.css" type="text/css" />
-    <title>Sam Ayres | Résumé</title>
-  </head>
-  <body class="font-sans antialiased w-full" id="welcome">
-    <div class="planet">
-      <svg id="ring" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152.5 135.6">
-          <radialGradient id="SVGID_1_" cx="40.124" cy="364.76" r="65.295" gradientTransform="matrix(.3997 .9167 -.1528 .0666 518.507 -167.787)" gradientUnits="userSpaceOnUse">
-              <stop offset="0" stop-color="#CCE0F4" stop-opacity=".1"></stop>
-              <stop offset=".047" stop-color="#C3DCF2" stop-opacity=".089"></stop>
-              <stop offset=".124" stop-color="#A9D2EE" stop-opacity=".07"></stop>
-              <stop offset=".223" stop-color="#80C2E7" stop-opacity=".046"></stop>
-              <stop offset=".338" stop-color="#47ACDE" stop-opacity=".018"></stop>
-              <stop offset=".412" stop-color="#1E9CD7" stop-opacity="0"></stop>
-              <stop offset=".669" stop-color="#0075BE" stop-opacity="0"></stop>
-              <stop offset=".994" stop-color="#A3DAFF"></stop>
-          </radialGradient>
-          <path class="ring-style" d="M119.3 91.2c16 18 24.8 32 21.4 35.8-5.4 5.9-38.5-15.4-74-47.6s-59.9-63.1-54.6-69C15.2 7 27.4 12.6 44 24"></path>
-      </svg>
-    </div>
-    <canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1282" height="418"></canvas>
-    <div class="container mx-auto max-w-screen-xl">
-      <main
-        id="wrapper"
-        class="flex flex-wrap sm:m-12 shadow-2xl"
-      >
-        <a class="download" target="_blank" href="/downloads/sam-ayres-resume.pdf">
-          <img
-            src="./images/download.svg"
-            class="inline"
-            alt="Download icon"
-          />
-          Download
-        </a>
-        <div
-          id="sidebar"
-          class="p-8 w-full md:w-2/6 bg-gradient-to-b from-indigo-300 via-green-300 to-white"
-        >
-          <div class="px-2 mb-4">
-            <img
-              src="./images/sam-ayres.jpg"
-              alt="Profile Picture"
-              class="rounded-full w-48 mx-auto mb-2"
-            />
-            <h1 class="text-center text-3xl font-semibold mb-2">Sam Ayres</h1>
-            <h2 class="text-center text-xl font-light">Associate Director of&nbsp;Technology</h2>
-          </div>
 
-          <div class="font-light text-lg px-2 mb-4">
-            <h2 class="text-xl font-semibold mb-4">Contact</h2>
-            <div class="flex items-center my-3">
-              <img
-                src="./images/mail-outline.svg"
-                class="inline w-6 mr-4"
-                alt="Mail icon"
-              />
-              <a href="mailto:">hello@5am.dev</a>
-            </div>
-            <div class="flex items-center my-3">
-              <img
-                src="./images/home-outline.svg"
-                class="inline w-6 pb-1 mr-4"
-                alt="House icon"
-              />
-              <div>
-                <p>Brooklyn, New York</p>
-              </div>
-            </div>
-          </div>
+<head>
+  <title>Sam Ayres | Résumé</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Nunito:wght@700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/resume.css" type="text/css" />
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+</head>
 
-          <div class="font-light text-lg px-2 mb-4 md:auto-cols-min">
-            <h2 class="text-xl font-semibold mb-4">Education</h2>
-            <h3 class="font-semibold">BSc Web Design</h3>
-            <p>University of the West&nbsp;of&nbsp;England, 2011&nbsp;-&nbsp;2014</p>
-          </div>
-
-          <div class="font-light text-lg px-2 mb-4">
-            <h2 class="text-xl font-semibold mb-4">Socials</h2>
-            <div class="flex items-center my-3">
-              <img
-                src="./images/logo-github.svg"
-                class="inline w-6 mr-4"
-                alt="GitHub Logo"
-              />
-              <a href="https://github.com/SamAyres1992" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
-            <div class="flex items-center my-3">
-              <img
-                src="./images/logo-stackoverflow.svg"
-                class="inline w-6 mr-4"
-                alt="Stack Overflow Logo"
-              />
-              <a href="https://stackoverflow.com/users/1648544/SamAyres1992" target="_blank" rel="noopener noreferrer"
-                >StackOverflow</a
-              >
-            </div>
-            <div class="flex items-center my-3">
-              <img
-                src="./images/logo-linkedin.svg"
-                class="inline w-6 mr-4"
-                alt="LinkedIn Logo"
-              />
-              <a href="https://linkedin.com/in/SamAyres1992" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            </div>
-            <div class="flex items-center my-3">
-              <img
-                src="./images/globe-outline.svg"
-                class="inline w-6 mr-4"
-                alt="Globe icon"
-              />
-              <a href="https://5am.dev" target="_blank" rel="noopener noreferrer"
-                >Portfolio</a
-              >
-            </div>
-          </div>
-
-          <div class="font-light text-lg px-2 mb-4">
-            <h2 class="text-xl font-semibold mb-4">Languages</h2>
-            <ul class="list-none">
-              <li>
-                <label for="css-skill">HTML</label>
-                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 progress">
-                  <div class="bg-gray-600 rounded-full progress" style="width: 90%"></div>
-                </div>
-              </li>
-              <li>
-                <label for="css-skill">CSS</label>
-                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 progress">
-                  <div class="bg-gray-600 rounded-full progress" style="width: 90%"></div>
-                </div>
-              </li>
-              <li>
-                <label for="react-skill">PHP</label>
-                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 progress">
-                  <div class="bg-gray-600 rounded-full" style="width: 80%"></div>
-                </div>
-              </li>
-              <li>
-                <label for="js-skill">JavaScript</label>
-                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 progress">
-                  <div class="bg-gray-600 rounded-full" style="width: 90%"></div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="font-light text-lg px-2 mb-4">
-            <h2 class="text-xl font-semibold mb-4">Frameworks</h2>
-            <ul class="list-none">
-              <li>
-                <label for="react-skill">React</label>
-                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 progress">
-                  <div class="bg-gray-600 rounded-full" style="width: 80%"></div>
-                </div>
-              </li>
-              <li>
-                <label for="react-skill">Symfony</label>
-                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 progress">
-                  <div class="bg-gray-600 rounded-full" style="width: 80%"></div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="font-light text-lg px-2 mb-4">
-            <h2 class="text-xl font-semibold mb-4">Misc.</h2>
-            <ul class="list-none">
-              <li>
-                <label for="css-skill">SCSS</label>
-                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 progress">
-                  <div class="bg-gray-600 rounded-full progress" style="width: 90%"></div>
-                </div>
-              </li>
-              <li>
-                <label for="node-skill">Node.js</label>
-                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 progress">
-                  <div class="bg-gray-600 rounded-full" style="width: 80%"></div>
-                </div>
-              </li>
-              <li>
-                <label for="design-skill">Figma, Photoshop, Sketch, XD</label>
-                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 progress">
-                  <div class="bg-gray-600 rounded-full progress" style="width: 50%"></div>
-                </div>
-              </li>
-              <li>
-                <div>Infrastructure / Hosting / DB</div>
-                <span class="rounded-xl px-3">Heroku</span>
-                <span class="rounded-xl px-3">Git</span>
-                <span class="rounded-xl px-3">MongoDB</span>
-                <span class="rounded-xl px-3">Wordpress</span>
-                <span class="rounded-xl px-3">CiviCRM</span>
-                <span class="rounded-xl px-3">Drupal</span>
-                <span class="rounded-xl px-3">Storyblok</span>
-                <span class="rounded-xl px-3">GrapesJS</span>
-                <span class="rounded-xl px-3">Mautic</span>
-                <span class="rounded-xl px-3">MJML</span>
-                <span class="rounded-xl px-3">Apache</span>
-                <span class="rounded-xl px-3">NGINX</span>
-              </li>
-            </ul>
-          </div>
+<body class="font-sans antialiased w-full" id="welcome">
+  <div class="planet">
+    <svg id="ring" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152.5 135.6">
+      <radialGradient id="SVGID_1_" cx="40.124" cy="364.76" r="65.295"
+        gradientTransform="matrix(.3997 .9167 -.1528 .0666 518.507 -167.787)" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#CCE0F4" stop-opacity=".1"></stop>
+        <stop offset=".047" stop-color="#C3DCF2" stop-opacity=".089"></stop>
+        <stop offset=".124" stop-color="#A9D2EE" stop-opacity=".07"></stop>
+        <stop offset=".223" stop-color="#80C2E7" stop-opacity=".046"></stop>
+        <stop offset=".338" stop-color="#47ACDE" stop-opacity=".018"></stop>
+        <stop offset=".412" stop-color="#1E9CD7" stop-opacity="0"></stop>
+        <stop offset=".669" stop-color="#0075BE" stop-opacity="0"></stop>
+        <stop offset=".994" stop-color="#A3DAFF"></stop>
+      </radialGradient>
+      <path class="ring-style"
+        d="M119.3 91.2c16 18 24.8 32 21.4 35.8-5.4 5.9-38.5-15.4-74-47.6s-59.9-63.1-54.6-69C15.2 7 27.4 12.6 44 24">
+      </path>
+    </svg>
+  </div>
+  <canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1282" height="418"></canvas>
+  <div class="container mx-auto max-w-screen-xl">
+    <main id="wrapper" class="flex flex-wrap sm:m-12 shadow-2xl">
+      <a class="download" target="_blank" href="/downloads/sam-ayres-resume.pdf">
+        <img src="./images/download.svg" class="inline" alt="Download icon" />
+        Download
+      </a>
+      <div id="sidebar" class="p-8 w-full md:w-2/6 bg-gradient-to-b from-indigo-300 via-green-300 to-white">
+        <div class="px-2 mb-4">
+          <img src="./images/sam-ayres.jpg" alt="Profile Picture" class="rounded-full w-48 mx-auto mb-2" />
+          <h1 class="text-center text-3xl font-semibold mb-2">Sam Ayres</h1>
+          <h2 class="text-center text-xl font-light">Director of&nbsp;Technology</h2>
         </div>
-        <div class="content w-full md:w-4/6 p-8">
-          <div id="profile" class="prose">
-            <h2 class="section-headline">Summary</h2>
-            <p>
-              I'm a driven web development professional with ten years of experience. I'm devoted to having a positive impact on the projects I work on and the people I work with. I measure success by business goals and client satisfaction. I help create value by delivering large-scale projects through innovation and streamlining processes.
-            </p>
+
+        <div class="font-light text-lg px-2 mb-4">
+          <h2 class="text-xl font-semibold mb-4">Contact</h2>
+          <div class="flex items-center my-3">
+            <img src="./images/mail-outline.svg" class="inline w-6 mr-4" alt="Mail icon" />
+            <a href="mailto:hello@5am.dev">hello@5am.dev</a>
           </div>
-          <hr class="mt-8 mb-12" />
-          <div id="experience" class="prose">
-            <h2 class="section-headline">Experience</h2>
+          <div class="flex items-center my-3">
+            <img src="./images/home-outline.svg" class="inline w-6 pb-1 mr-4" alt="House icon" />
             <div>
-              <h3>CultHealth, New York, United States</h3>
-              <section class="mb-4">
-                <h4>
-                  Associate Director of Technology, July. 2021 - Present
-                </h4>
-                <p>
-                  Tasked with building out the entire department. I facilitated all processes, technologies, timelines, and hiring.
-                </p>
-                <p>
-                  My first focus was to put in place a solid foundation for how we work. This involved implementing appropriate devops solutions, including: a git workflow, designating approved frameworks, created kanban boards and gantt charts.
-                </p>
-                <p>
-                  To improve quality control I put in place a thorough QA process to help cut mistakes. This included the use of custom compilers, testing suites and checklists.
-                </p>
-                <p>
-                  I worked towards automating everyday processes to speed up development time. This included automating everyday tasks, such as:
-                </p>
-                <ul>
-                  <li>Screenshotting banners/emails/websites to allow other departments to review</li>
-                  <li>Uploading banners/emails/websites to a staging server</li>
-                  <li>Sending preview emails via SendGrid API</li>
-                </ul>
-              </section>
-            </div>
-            <div>
-              <h3>Heartbeat, New York, United States</h3>
-              <section class="mb-4">
-                <h4>
-                  Senior Web Developer, Feb. 2020 - Jul. 2021
-                </h4>
-                <p>
-                  Lead developer for large ongoing client projects spanning several websites. Worked with many team departments to help meet strict client deadlines.
-                </p>
-                <ul>
-                  <li>
-                    Replaced vanilla JS projects with progressive React application
-                  </li>
-                  <li>
-                    Reduced user form errors by leveraging React state logic to ensure correct workflow
-                  </li>
-                  <li>
-                    Added bot protection for form applications using honeypot & Google Recapcha
-                  </li>
-                  <li>
-                    Ported and refactored out-of-date Drupal modules to Symfony services
-                  </li>
-                  <li>
-                    Created rapid website prototyping tool
-                  </li>
-                </ul>
-              </section>
-            </div>
-            <div>
-              <h3>Circle Interactive, Bristol, United Kingdom</h3>
-              <section class="mb-4">
-                <h4>
-                  Web Developer, Feb. 2016 - Jul. 2019
-                </h4>
-                <p>
-                  Circle Interactive was my introduction to multi-client working. I enjoyed the opportunity of using new technologies, such as React.
-                </p>
-                <ul>
-                  <li>
-                    Introduced git workflow for dev team
-                  </li>
-                  <li>
-                    Implemented git-based automated repository creation service using Drupal custom modules
-                  </li>
-                  <li>
-                    Project lead for React rental web application
-                  </li>
-                  <li>
-                    Mentored students and helped them develop their abilities within web development.
-                  </li>
-                </ul>
-              </section>
+              <p>Brooklyn, New York</p>
             </div>
           </div>
         </div>
-      </main>
-    </div>
-    <script type="text/javascript" src="/js/app.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-136344345-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+        <div class="font-light text-lg px-2 mb-4 md:auto-cols-min">
+          <h2 class="text-xl font-semibold mb-4">Education</h2>
+          <h3 class="font-semibold">Batchelors: Web Design</h3>
+          <p>University of the West&nbsp;of&nbsp;England, 2011&nbsp;-&nbsp;2014</p>
+        </div>
 
-        gtag('config', 'UA-136344345-1');
-    </script>
-  </body>
+        <div class="font-light text-lg px-2 mb-4">
+          <h2 class="text-xl font-semibold mb-4">Socials</h2>
+          <div class="flex items-center my-3">
+            <img src="./images/logo-github.svg" class="inline w-6 mr-4" alt="GitHub Logo" />
+            <a href="https://github.com/SamAyres1992" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+          <div class="flex items-center my-3">
+            <img src="./images/logo-stackoverflow.svg" class="inline w-6 mr-4" alt="Stack Overflow Logo" />
+            <a href="https://stackoverflow.com/users/1648544/SamAyres1992" target="_blank"
+              rel="noopener noreferrer">StackOverflow</a>
+          </div>
+          <div class="flex items-center my-3">
+            <img src="./images/logo-linkedin.svg" class="inline w-6 mr-4" alt="LinkedIn Logo" />
+            <a href="https://linkedin.com/in/SamAyres1992" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+          <div class="flex items-center my-3">
+            <img src="./images/globe-outline.svg" class="inline w-6 mr-4" alt="Globe icon" />
+            <a href="https://5am.dev" target="_blank" rel="noopener noreferrer">Portfolio</a>
+          </div>
+        </div>
+
+        <div class="font-light text-lg px-2 mb-4">
+          <h2 class="text-xl font-semibold mb-4">Languages &amp; Frameworks</h2>
+          <ul class="list-none">
+            <li>
+              <span class="rounded-xl px-3">HTML</span>
+              <span class="rounded-xl px-3">CSS</span>
+              <span class="rounded-xl px-3">PHP</span>
+              <span class="rounded-xl px-3">React</span>
+              <span class="rounded-xl px-3">Symfony</span>
+              <span class="rounded-xl px-3">SCSS</span>
+              <span class="rounded-xl px-3">Node.js</span>
+              <span class="rounded-xl px-3">MJML</span>
+            </li>
+          </ul>
+        </div>
+        <div class="font-light text-lg px-2 mb-4">
+          <h2 class="text-xl font-semibold mb-4">Infrastructure / Hosting / DB</h2>
+          <ul class="list-none">
+            <li>
+              <span class="rounded-xl px-3">Git</span>
+              <span class="rounded-xl px-3">SQL</span>
+              <span class="rounded-xl px-3">MongoDB</span>
+              <span class="rounded-xl px-3">Wordpress</span>
+              <span class="rounded-xl px-3">CiviCRM</span>
+              <span class="rounded-xl px-3">Drupal</span>
+              <span class="rounded-xl px-3">Storyblok</span>
+              <span class="rounded-xl px-3">GrapesJS</span>
+              <span class="rounded-xl px-3">Heroku</span>
+              <span class="rounded-xl px-3">Mautic</span>
+              <span class="rounded-xl px-3">Apache</span>
+              <span class="rounded-xl px-3">NGINX</span>
+            </li>
+          </ul>
+        </div>
+        <div class="font-light text-lg px-2 mb-4">
+          <h2 class="text-xl font-semibold mb-4">Design</h2>
+          <ul class="list-none">
+            <li>
+              <span class="rounded-xl px-3">XD</span>
+              <span class="rounded-xl px-3">Figma</span>
+              <span class="rounded-xl px-3">Photoshop</span>
+              <span class="rounded-xl px-3">Sketch</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="content w-full md:w-4/6 p-8">
+        <div id="profile" class="prose">
+          <h2 class="section-headline">Summary</h2>
+          <p>
+            I am a motivated web development professional with ten years of experience. I am dedicated to making a
+            positive impact on both the projects I work on and the people I work with. I measure success by meeting
+            business goals and ensuring client satisfaction. I help create value by delivering large-scale projects
+            through innovation and streamlined processes.
+          </p>
+        </div>
+        <hr class="mt-8 mb-12" />
+        <div id="experience" class="prose">
+          <h2 class="section-headline">Experience</h2>
+          <div>
+            <h3>CultHealth, New York, United States</h3>
+            <section class="mb-4">
+              <h4>
+                Director of Technology, Oct 2022 - Present
+                <br>
+                Associate Director of Technology, Jul 2021 - Oct 2022
+              </h4>
+              <p>
+                My responsibilities include building out the entire department.
+                I facilitated all processes, technologies, timelines, and hiring.
+              </p>
+              <p>
+                My first focus was to establish a solid foundation for how we work. This involved implementing
+                appropriate DevOps solutions, including a Git workflow, designating approved frameworks, and creating
+                Kanban boards and Gantt charts.
+              </p>
+              <p>
+                To improve quality control, I put in place a thorough QA process to help reduce mistakes. This included
+                the use of custom compilers, testing suites, and checklists.
+              </p>
+              <p>
+                I also worked towards automating everyday processes to speed up development time. This included
+                automating tasks such as:
+              </p>
+              <ul>
+                <li>Banner generation tool leveraging Gulp and Mustache.</li>
+                <li>Email generation tool leveraging Gulp and MJML.</li>
+                <li>Screenshots of banners, emails and websites to enable a more efficient department reviewal process.</li>
+                <li>Uploading banners, emails and websites to staging server upon completion.</li>
+                <li>Sending preview emails via the SendGrid API to emailonacid test suite.</li>
+              </ul>
+            </section>
+          </div>
+          <div>
+            <h3>Heartbeat, New York, United States</h3>
+            <section class="mb-4">
+              <h4>
+                Senior Web Developer, Mar 2020 - Jun 2021
+                <br>
+                Freelance Senior Web Developer, Feb 2020 - Mar 2020
+              </h4>
+              <p>
+                As the lead developer for large ongoing client projects spanning several websites, I worked with many
+                team departments to help meet strict client deadlines. My contributions and responsibilities included:
+              </p>
+              <ul>
+                <li>
+                  Creating a rapid website prototyping tool.
+                </li>
+                <li>
+                  Replacing vanilla JS projects with progressive React applications.
+                </li>
+                <li>
+                  Leveraging React state logic to reduce user errors and ensure successful workflows.
+                </li>
+                <li>
+                  Porting and refactoring out-of-date Drupal modules to Symfony services.
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div>
+            <h3>Circle Interactive, Bristol, United Kingdom</h3>
+            <section class="mb-4">
+              <h4>
+                Web Developer, Feb 2016 - Jul 2019
+              </h4>
+              <p>
+                Circle Interactive was my introduction to multi-client working. I enjoyed the opportunity to use new
+                technologies, such as React. During my time there, I:
+              </p>
+              <ul>
+                <li>
+                  Introduced a Git workflow for the development team.
+                </li>
+                <li>
+                  Implemented an automated repository creation service using Drupal custom modules.
+                </li>
+                <li>
+                  Led a project for a React-based rental web application.
+                </li>
+                <li>
+                  Mentored students and helped them develop their abilities in web development.
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script type="text/javascript" src="./js/app.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-136344345-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-136344345-1');
+  </script>
+</body>
+
 </html>

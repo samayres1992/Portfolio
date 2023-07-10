@@ -1,11 +1,54 @@
 // variables
-$card-width:  100%;
+$card-width: 100%;
 $card-height: 525px;
-$h-color:     #9CC9E3;
-$yellow:      #D0BB57;
-$txt-color:   #DCE3E7;
+$h-color: #9CC9E3;
+$yellow: #D0BB57;
+$txt-color: #DCE3E7;
 
-.blog-card{
+.title-content {
+    text-align: center;
+    z-index: 20;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: $h-color;
+    margin-bottom: 0;
+}
+
+hr {
+    width: 50%;
+    height: 2px;
+    margin: 20px auto;
+    border: 0;
+    background: #fff;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.intro {
+    width: 75%;
+    height: 85px;
+
+    @media only screen and (max-width: 960px) {
+        height: 140px;
+        width: 90%
+    }
+
+    margin: 0 auto;
+    color: $txt-color;
+    font-size: 1.4em;
+    line-height: 28px;
+}
+
+.blog-card {
     width: $card-width;
     height: $card-height;
     overflow: hidden;
@@ -13,12 +56,17 @@ $txt-color:   #DCE3E7;
     box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
     text-align: center;
     position: relative;
-  
+
     h2 {
         color: #fff;
         padding: 1em 1em 0em 1em;
-        font-size: 3em; 
+        font-size: 3em;
         height: 3em;
+        @media only screen and (max-width: 900px) {
+            left: 10%;
+            font-size: 2em;
+            padding: 1em 0.5em 0em 0.5em;
+        }
     }
 
     &.locc-it {
@@ -33,10 +81,12 @@ $txt-color:   #DCE3E7;
         position: absolute;
         width: 100%;
         bottom: 65px;
+
         a {
             font-size: 3em;
             margin: 0 0.25em;
             color: #fff;
+
             &:hover {
                 color: #3273dc;
             }
@@ -44,38 +94,7 @@ $txt-color:   #DCE3E7;
     }
 }
 
-.title-content{
-    text-align: center;
-    z-index: 20;
-    width: 100%;
-    padding-bottom: 5px;
-}
-h3{
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    color: $h-color;
-    margin-bottom: 0;
-}
-hr{
-    width: 50%;
-    height: 2px;
-    margin: 20px auto;
-    border: 0;
-    background: #fff;
-}
-.intro{
-    width: 75%;
-    height: 85px;
-    @media only screen and (max-width: 960px) {
-        height: 140px;
-    }
-    margin: 0 auto;
-    color: $txt-color;
-    font-size: 1.4em;
-    line-height: 28px;
-}
-.card-info{
+.card-info {
     width: 100%;
     position: absolute;
     top: 175px;
@@ -86,11 +105,11 @@ hr{
     line-height: 24px;
     z-index: 20;
     opacity: 0;
-    transition: bottom .3s, opacity .3s cubic-bezier(.33,.66,.66,1);
+    transition: bottom .3s, opacity .3s cubic-bezier(.33, .66, .66, 1);
     font-size: 1em;
 }
 
-.utility-info{
+.utility-info {
     position: absolute;
     bottom: 0px;
     left: 0;
@@ -98,17 +117,19 @@ hr{
     width: 100%;
 }
 
-.utility-list{
+.utility-list {
     list-style-type: none;
     padding: 0;
-    width: 100%; 
+    width: 100%;
     position: absolute;
     bottom: 1em;
-    li{
+
+    li {
         padding: 0.25em 0.5em;
         display: inline-block;
-        color: $txt-color; 
-        &.date{
+        color: $txt-color;
+
+        &.date {
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 5px;
             font-size: 1.25em;
